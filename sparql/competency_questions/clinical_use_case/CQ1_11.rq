@@ -1,0 +1,10 @@
+# Which side-effects are very frequent (10%) for lithium (ATC N05AN01)?
+
+SELECT DISTINCT ?adeLabel 
+
+WHERE {
+    << atc:N05AN01 dakikg:hasAdverseEvent ?ade >> dakikg:hasFrequency ?freq .
+    FILTER(?freq > 4.0)
+    
+    ?ade rdfs:label ?adeLabel .
+} 

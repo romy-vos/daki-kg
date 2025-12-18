@@ -1,0 +1,22 @@
+# which drugs for the treatment of diabetes do NOT have AKI as a side effect
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+
+   # all drugs indicated for diabetes (and their descendants)
+   VALUES ?parent { sct:73211009 }  # diabetes mellitus
+   ?drug dakikg:isIndicatedFor ?disease .
+   ?disease rdfs:subClassOf* ?parent .
+   ?drug rdfs:label ?druglabel .
+   ?drug rdfs:label ?druglabel 
+   FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
+   
+   # exclude all drugs that have at least one AKI ade
+   MINUS {
+    SELECT DISTINCT ?drug WHERE {
+      ?drug dakikg:hasAdverseEvent ?ade .
+	  ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    }
+  }
+}

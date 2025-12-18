@@ -1,0 +1,44 @@
+# Which side effects may occur when prescribing naproxen, furosemide and enalapril concomitantly?
+# This version finds side effects that fall under the same SNOMED branch for all three drugs.
+# atc:M01AE02 atc:C03CA01 atc:C09AA02
+
+SELECT
+  ?topRoot ?topLabel
+  (GROUP_CONCAT(DISTINCT ?descLabel; SEPARATOR=", ") AS ?sharedEvents)
+WHERE {
+
+  # Fix the three drugs
+  BIND(atc:M01AE02 AS ?V1)
+  BIND(atc:C03CA01 AS ?V2)
+  BIND(atc:C09AA02 AS ?V3)
+
+  # Adverse events for each drug
+  atc:M01AE02 dakikg:hasAdverseEvent ?c1 .
+  atc:C03CA01 dakikg:hasAdverseEvent ?c2 .
+  atc:C09AA02 dakikg:hasAdverseEvent ?c3 .
+
+  # Shared descendant: intersection of all three
+  ?descendant rdfs:subClassOf* ?c1, ?c2, ?c3 .
+  ?descendant skos:prefLabel ?descLabel .
+
+  # Determine top-root
+  {
+    BIND(?c1 AS ?topRoot)
+    FILTER EXISTS { ?c2 rdfs:subClassOf* ?topRoot . ?c3 rdfs:subClassOf* ?topRoot }
+  }
+  UNION
+  {
+    BIND(?c2 AS ?topRoot)
+    FILTER EXISTS { ?c1 rdfs:subClassOf* ?topRoot . ?c3 rdfs:subClassOf* ?topRoot }
+  }
+  UNION
+  {
+    BIND(?c3 AS ?topRoot)
+    FILTER EXISTS { ?c1 rdfs:subClassOf* ?topRoot . ?c2 rdfs:subClassOf* ?topRoot }
+  }
+
+  ?topRoot skos:prefLabel ?topLabel .
+  FILTER(LANGMATCHES(LANG(?topLabel), "en"))
+  FILTER(LANGMATCHES(LANG(?descLabel), "en"))
+}
+GROUP BY ?topRoot ?topLabel

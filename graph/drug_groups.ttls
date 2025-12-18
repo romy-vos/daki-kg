@@ -1,0 +1,3350 @@
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix dakikg: <http://w3id.org/dakikg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix atc: <http://purl.bioontology.org/ontology/ATC/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+atc:A01 a dakikg:DrugClass;
+  rdfs:label "STOMATOLOGICAL PREPARATIONS"@en .
+
+atc:A01AB09 a dakikg:Drug;
+  rdfs:label "MICONAZOLE"@en;
+  rdfs:subClassOf atc:A01 .
+
+atc:A02 a dakikg:DrugClass;
+  rdfs:label "DRUGS FOR ACID RELATED DISORDERS"@en .
+
+atc:A02AA04 a dakikg:Drug;
+  rdfs:label "MAGNESIUM HYDROXIDE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02AC01 a dakikg:Drug;
+  rdfs:label "CALCIUM CARBONATE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02AD01 a dakikg:Drug;
+  rdfs:label "ORDINARY SALT COMBINATIONS"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02AF02 a dakikg:Drug;
+  rdfs:label "ORDINARY SALT COMBINATIONS AND ANTIFLATULENTS"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BA01 a dakikg:Drug;
+  rdfs:label "CIMETIDINE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BA03 a dakikg:Drug;
+  rdfs:label "FAMOTIDINE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BC01 a dakikg:Drug;
+  rdfs:label "OMEPRAZOLE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BC02 a dakikg:Drug;
+  rdfs:label "PANTOPRAZOLE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BC03 a dakikg:Drug;
+  rdfs:label "LANSOPRAZOLE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BC04 a dakikg:Drug;
+  rdfs:label "RABEPRAZOLE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BC05 a dakikg:Drug;
+  rdfs:label "ESOMEPRAZOLE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BD04 a dakikg:Drug;
+  rdfs:label "PANTOPRAZOLE, AMOXICILLIN AND CLARITHROMYCIN"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BX02 a dakikg:Drug;
+  rdfs:label "SUCRALFATE"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A02BX13 a dakikg:Drug;
+  rdfs:label "ALGINIC ACID"@en;
+  rdfs:subClassOf atc:A02 .
+
+atc:A03 a dakikg:DrugClass;
+  rdfs:label "DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS"@en .
+
+atc:A03FA03 a dakikg:Drug;
+  rdfs:label "DOMPERIDONE"@en;
+  rdfs:subClassOf atc:A03 .
+
+atc:A04 a dakikg:DrugClass;
+  rdfs:label "ANTIEMETICS AND ANTINAUSEANTS"@en .
+
+atc:A04AA01 a dakikg:Drug;
+  rdfs:label "ONDANSETRON"@en;
+  rdfs:subClassOf atc:A04 .
+
+atc:A04AA55 a dakikg:Drug;
+  rdfs:label "PALONOSETRON, COMBINATIONS"@en;
+  rdfs:subClassOf atc:A04 .
+
+atc:A04AD12 a dakikg:Drug;
+  rdfs:label "APREPITANT"@en;
+  rdfs:subClassOf atc:A04 .
+
+atc:A06 a dakikg:DrugClass;
+  rdfs:label "DRUGS FOR CONSTIPATION"@en .
+
+atc:A06AB02 a dakikg:Drug;
+  rdfs:label "BISACODYL"@en;
+  rdfs:subClassOf atc:A06 .
+
+atc:A06AB58 a dakikg:Drug;
+  rdfs:label "SODIUM PICOSULFATE, COMBINATIONS"@en;
+  rdfs:subClassOf atc:A06 .
+
+atc:A06AD65 a dakikg:Drug;
+  rdfs:label "MACROGOL, COMBINATIONS"@en;
+  rdfs:subClassOf atc:A06 .
+
+atc:A06AH03 a dakikg:Drug;
+  rdfs:label "NALOXEGOL"@en;
+  rdfs:subClassOf atc:A06 .
+
+atc:A07 a dakikg:DrugClass;
+  rdfs:label "ANTIDIARRHEALS, INTESTINAL ANTIINFLAMMATORY/ANTIINFECTIVE AGENTS"@en .
+
+atc:A07AA09 a dakikg:Drug;
+  rdfs:label "VANCOMYCIN"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07AA12 a dakikg:Drug;
+  rdfs:label "FIDAXOMICIN"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07BA01 a dakikg:Drug;
+  rdfs:label "MEDICINAL CHARCOAL"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07EA06 a dakikg:Drug;
+  rdfs:label "BUDESONIDE"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07EA07 a dakikg:Drug;
+  rdfs:label "BECLOMETASONE"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07EC01 a dakikg:Drug;
+  rdfs:label "SULFASALAZINE"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A07EC02 a dakikg:Drug;
+  rdfs:label "MESALAZINE"@en;
+  rdfs:subClassOf atc:A07 .
+
+atc:A08 a dakikg:DrugClass;
+  rdfs:label "ANTIOBESITY PREPARATIONS, EXCL. DIET PRODUCTS"@en .
+
+atc:A08AA62 a dakikg:Drug;
+  rdfs:label "BUPROPION AND NALTREXONE"@en;
+  rdfs:subClassOf atc:A08 .
+
+atc:A08AB01 a dakikg:Drug;
+  rdfs:label "ORLISTAT"@en;
+  rdfs:subClassOf atc:A08 .
+
+atc:A10 a dakikg:DrugClass;
+  rdfs:label "DRUGS USED IN DIABETES"@en .
+
+atc:A10AB01 a dakikg:Drug;
+  rdfs:label "INSULIN (HUMAN)"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AB04 a dakikg:Drug;
+  rdfs:label "INSULIN LISPRO"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AB05 a dakikg:Drug;
+  rdfs:label "INSULIN ASPART"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AB06 a dakikg:Drug;
+  rdfs:label "INSULIN GLULISINE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AC01 a dakikg:Drug;
+  rdfs:label "INSULIN (HUMAN)"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AD01 a dakikg:Drug;
+  rdfs:label "INSULIN (HUMAN)"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AD04 a dakikg:Drug;
+  rdfs:label "INSULIN LISPRO"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AD05 a dakikg:Drug;
+  rdfs:label "INSULIN ASPART"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AD06 a dakikg:Drug;
+  rdfs:label "INSULIN DEGLUDEC AND INSULIN ASPART"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AE04 a dakikg:Drug;
+  rdfs:label "INSULIN GLARGINE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AE05 a dakikg:Drug;
+  rdfs:label "INSULIN DETEMIR"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AE06 a dakikg:Drug;
+  rdfs:label "INSULIN DEGLUDEC"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AE54 a dakikg:Drug;
+  rdfs:label "INSULIN GLARGINE AND LIXISENATIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10AE56 a dakikg:Drug;
+  rdfs:label "INSULIN DEGLUDEC AND LIRAGLUTIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BA02 a dakikg:Drug;
+  rdfs:label "METFORMIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BB03 a dakikg:Drug;
+  rdfs:label "TOLBUTAMIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BB09 a dakikg:Drug;
+  rdfs:label "GLICLAZIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BB12 a dakikg:Drug;
+  rdfs:label "GLIMEPIRIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD02 a dakikg:Drug;
+  rdfs:label "METFORMIN AND SULFONYLUREAS"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD05 a dakikg:Drug;
+  rdfs:label "METFORMIN AND PIOGLITAZONE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD07 a dakikg:Drug;
+  rdfs:label "METFORMIN AND SITAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD08 a dakikg:Drug;
+  rdfs:label "METFORMIN AND VILDAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD11 a dakikg:Drug;
+  rdfs:label "METFORMIN AND LINAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD15 a dakikg:Drug;
+  rdfs:label "METFORMIN AND DAPAGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD20 a dakikg:Drug;
+  rdfs:label "METFORMIN AND EMPAGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BD24 a dakikg:Drug;
+  rdfs:label "SITAGLIPTIN AND ERTUGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BF01 a dakikg:Drug;
+  rdfs:label "ACARBOSE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BG03 a dakikg:Drug;
+  rdfs:label "PIOGLITAZONE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BH01 a dakikg:Drug;
+  rdfs:label "SITAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BH02 a dakikg:Drug;
+  rdfs:label "VILDAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BH03 a dakikg:Drug;
+  rdfs:label "SAXAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BH05 a dakikg:Drug;
+  rdfs:label "LINAGLIPTIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BJ02 a dakikg:Drug;
+  rdfs:label "LIRAGLUTIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BJ03 a dakikg:Drug;
+  rdfs:label "LIXISENATIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BJ05 a dakikg:Drug;
+  rdfs:label "DULAGLUTIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BJ06 a dakikg:Drug;
+  rdfs:label "SEMAGLUTIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BK01 a dakikg:Drug;
+  rdfs:label "DAPAGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BK02 a dakikg:Drug;
+  rdfs:label "CANAGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BK03 a dakikg:Drug;
+  rdfs:label "EMPAGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BK04 a dakikg:Drug;
+  rdfs:label "ERTUGLIFLOZIN"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BX02 a dakikg:Drug;
+  rdfs:label "REPAGLINIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A10BX16 a dakikg:Drug;
+  rdfs:label "TIRZEPATIDE"@en;
+  rdfs:subClassOf atc:A10 .
+
+atc:A11 a dakikg:DrugClass;
+  rdfs:label "VITAMINS"@en .
+
+atc:A11CC03 a dakikg:Drug;
+  rdfs:label "ALFACALCIDOL"@en;
+  rdfs:subClassOf atc:A11 .
+
+atc:A11CC04 a dakikg:Drug;
+  rdfs:label "CALCITRIOL"@en;
+  rdfs:subClassOf atc:A11 .
+
+atc:A11GA01 a dakikg:Drug;
+  rdfs:label "ASCORBIC ACID (VIT C)"@en;
+  rdfs:subClassOf atc:A11 .
+
+atc:A12 a dakikg:DrugClass;
+  rdfs:label "MINERAL SUPPLEMENTS"@en .
+
+atc:A12AA04 a dakikg:Drug;
+  rdfs:label "CALCIUM CARBONATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12AX a dakikg:Drug;
+  rdfs:label "CALCIUM, COMBINATIONS WITH VITAMIN D AND/OR OTHER DRUGS"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12BA01 a dakikg:Drug;
+  rdfs:label "POTASSIUM CHLORIDE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12BA02 a dakikg:Drug;
+  rdfs:label "POTASSIUM CITRATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12BA03 a dakikg:Drug;
+  rdfs:label "POTASSIUM HYDROGENTARTRATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12BA30 a dakikg:Drug;
+  rdfs:label "POTASSIUM (DIFFERENT SALTS IN COMBINATION)"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CB01 a dakikg:Drug;
+  rdfs:label "ZINC SULFATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CC02 a dakikg:Drug;
+  rdfs:label "MAGNESIUM SULFATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CC03 a dakikg:Drug;
+  rdfs:label "MAGNESIUM GLUCONATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CC04 a dakikg:Drug;
+  rdfs:label "MAGNESIUM CITRATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CC05 a dakikg:Drug;
+  rdfs:label "MAGNESIUM ASPARTATE"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A12CX a dakikg:Drug;
+  rdfs:label "OTHER MINERAL PRODUCTS"@en;
+  rdfs:subClassOf atc:A12 .
+
+atc:A14 a dakikg:DrugClass;
+  rdfs:label "ANABOLIC AGENTS FOR SYSTEMIC USE"@en .
+
+atc:A14AB01 a dakikg:Drug;
+  rdfs:label "NANDROLONE"@en;
+  rdfs:subClassOf atc:A14 .
+
+atc:A16 a dakikg:DrugClass;
+  rdfs:label "OTHER ALIMENTARY TRACT AND METABOLISM PRODUCTS"@en .
+
+atc:A16AX05 a dakikg:Drug;
+  rdfs:label "ZINC ACETATE"@en;
+  rdfs:subClassOf atc:A16 .
+
+atc:A16AX12 a dakikg:Drug;
+  rdfs:label "TRIENTINE"@en;
+  rdfs:subClassOf atc:A16 .
+
+atc:B01 a dakikg:DrugClass;
+  rdfs:label "ANTITHROMBOTIC AGENTS"@en .
+
+atc:B01AA04 a dakikg:Drug;
+  rdfs:label "PHENPROCOUMON"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AA07 a dakikg:Drug;
+  rdfs:label "ACENOCOUMAROL"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC04 a dakikg:Drug;
+  rdfs:label "CLOPIDOGREL"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC06 a dakikg:Drug;
+  rdfs:label "ACETYLSALICYLIC ACID"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC08 a dakikg:Drug;
+  rdfs:label "CARBASALATE CALCIUM"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC22 a dakikg:Drug;
+  rdfs:label "PRASUGREL"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC24 a dakikg:Drug;
+  rdfs:label "TICAGRELOR"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC27 a dakikg:Drug;
+  rdfs:label "SELEXIPAG"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AC30 a dakikg:Drug;
+  rdfs:label "COMBINATIONS"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AE07 a dakikg:Drug;
+  rdfs:label "DABIGATRAN ETEXILATE"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AF01 a dakikg:Drug;
+  rdfs:label "RIVAROXABAN"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AF02 a dakikg:Drug;
+  rdfs:label "APIXABAN"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B01AF03 a dakikg:Drug;
+  rdfs:label "EDOXABAN"@en;
+  rdfs:subClassOf atc:B01 .
+
+atc:B02 a dakikg:DrugClass;
+  rdfs:label "ANTIHEMORRHAGICS"@en .
+
+atc:B02BX05 a dakikg:Drug;
+  rdfs:label "ELTROMBOPAG"@en;
+  rdfs:subClassOf atc:B02 .
+
+atc:B03 a dakikg:DrugClass;
+  rdfs:label "ANTIANEMIC PREPARATIONS"@en .
+
+atc:B03AA02 a dakikg:Drug;
+  rdfs:label "FERROUS FUMARATE"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03AA03 a dakikg:Drug;
+  rdfs:label "FERROUS GLUCONATE"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03AA05 a dakikg:Drug;
+  rdfs:label "FERROUS CHLORIDE"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03AA07 a dakikg:Drug;
+  rdfs:label "FERROUS SULFATE"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03XA01 a dakikg:Drug;
+  rdfs:label "ERYTHROPOIETIN"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03XA02 a dakikg:Drug;
+  rdfs:label "DARBEPOETIN ALFA"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03XA03 a dakikg:Drug;
+  rdfs:label "METHOXY POLYETHYLENE GLYCOL-EPOETIN BETA"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03XA05 a dakikg:Drug;
+  rdfs:label "ROXADUSTAT"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B03XA08 a dakikg:Drug;
+  rdfs:label "VADADUSTAT"@en;
+  rdfs:subClassOf atc:B03 .
+
+atc:B05 a dakikg:DrugClass;
+  rdfs:label "BLOOD SUBSTITUTES AND PERFUSION SOLUTIONS"@en .
+
+atc:B05BB02 a dakikg:Drug;
+  rdfs:label "ELECTROLYTES WITH CARBOHYDRATES"@en;
+  rdfs:subClassOf atc:B05 .
+
+atc:B05BC01 a dakikg:Drug;
+  rdfs:label "MANNITOL"@en;
+  rdfs:subClassOf atc:B05 .
+
+atc:B05XA01 a dakikg:Drug;
+  rdfs:label "POTASSIUM CHLORIDE"@en;
+  rdfs:subClassOf atc:B05 .
+
+atc:B05XC a dakikg:Drug;
+  rdfs:label "VITAMINS"@en;
+  rdfs:subClassOf atc:B05 .
+
+atc:C01 a dakikg:DrugClass;
+  rdfs:label "CARDIAC THERAPY"@en .
+
+atc:C01AA05 a dakikg:Drug;
+  rdfs:label "DIGOXIN"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BA01 a dakikg:Drug;
+  rdfs:label "QUINIDINE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BA02 a dakikg:Drug;
+  rdfs:label "PROCAINAMIDE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BA03 a dakikg:Drug;
+  rdfs:label "DISOPYRAMIDE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BC03 a dakikg:Drug;
+  rdfs:label "PROPAFENONE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BC04 a dakikg:Drug;
+  rdfs:label "FLECAINIDE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BD01 a dakikg:Drug;
+  rdfs:label "AMIODARONE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01BD05 a dakikg:Drug;
+  rdfs:label "IBUTILIDE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01CA02 a dakikg:Drug;
+  rdfs:label "ISOPRENALINE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01CA07 a dakikg:Drug;
+  rdfs:label "DOBUTAMINE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01CA24 a dakikg:Drug;
+  rdfs:label "EPINEPHRINE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01CE02 a dakikg:Drug;
+  rdfs:label "MILRINONE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01CE03 a dakikg:Drug;
+  rdfs:label "ENOXIMONE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01DA02 a dakikg:Drug;
+  rdfs:label "GLYCERYL TRINITRATE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01DA08 a dakikg:Drug;
+  rdfs:label "ISOSORBIDE DINITRATE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01DX22 a dakikg:Drug;
+  rdfs:label "VERICIGUAT"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01EB16 a dakikg:Drug;
+  rdfs:label "IBUPROFEN"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C01EB17 a dakikg:Drug;
+  rdfs:label "IVABRADINE"@en;
+  rdfs:subClassOf atc:C01 .
+
+atc:C02 a dakikg:DrugClass;
+  rdfs:label "ANTIHYPERTENSIVES"@en .
+
+atc:C02AB01 a dakikg:Drug;
+  rdfs:label "METHYLDOPA (LEVOROTATORY)"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02AC01 a dakikg:Drug;
+  rdfs:label "CLONIDINE"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02AC02 a dakikg:Drug;
+  rdfs:label "GUANFACINE"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02AC05 a dakikg:Drug;
+  rdfs:label "MOXONIDINE"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02CA04 a dakikg:Drug;
+  rdfs:label "DOXAZOSIN"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02CA06 a dakikg:Drug;
+  rdfs:label "URAPIDIL"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02DC01 a dakikg:Drug;
+  rdfs:label "MINOXIDIL"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02KX01 a dakikg:Drug;
+  rdfs:label "BOSENTAN"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02KX02 a dakikg:Drug;
+  rdfs:label "AMBRISENTAN"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02KX04 a dakikg:Drug;
+  rdfs:label "MACITENTAN"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C02KX05 a dakikg:Drug;
+  rdfs:label "RIOCIGUAT"@en;
+  rdfs:subClassOf atc:C02 .
+
+atc:C03 a dakikg:DrugClass;
+  rdfs:label "DIURETICS"@en .
+
+atc:C03AA03 a dakikg:Drug;
+  rdfs:label "HYDROCHLOROTHIAZIDE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03BA04 a dakikg:Drug;
+  rdfs:label "CHLORTALIDONE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03BA11 a dakikg:Drug;
+  rdfs:label "INDAPAMIDE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03CA01 a dakikg:Drug;
+  rdfs:label "FUROSEMIDE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03CA02 a dakikg:Drug;
+  rdfs:label "BUMETANIDE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03DA01 a dakikg:Drug;
+  rdfs:label "SPIRONOLACTONE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03DA04 a dakikg:Drug;
+  rdfs:label "EPLERENONE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03DA05 a dakikg:Drug;
+  rdfs:label "FINERENONE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03DB02 a dakikg:Drug;
+  rdfs:label "TRIAMTERENE"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03EA01 a dakikg:Drug;
+  rdfs:label "HYDROCHLOROTHIAZIDE AND POTASSIUM-SPARING AGENTS"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C03XA01 a dakikg:Drug;
+  rdfs:label "TOLVAPTAN"@en;
+  rdfs:subClassOf atc:C03 .
+
+atc:C04 a dakikg:DrugClass;
+  rdfs:label "PERIPHERAL VASODILATORS"@en .
+
+atc:C04AB01 a dakikg:Drug;
+  rdfs:label "PHENTOLAMINE"@en;
+  rdfs:subClassOf atc:C04 .
+
+atc:C07 a dakikg:DrugClass;
+  rdfs:label "BETA BLOCKING AGENTS"@en .
+
+atc:C07AA05 a dakikg:Drug;
+  rdfs:label "PROPRANOLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AA07 a dakikg:Drug;
+  rdfs:label "SOTALOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB02 a dakikg:Drug;
+  rdfs:label "METOPROLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB03 a dakikg:Drug;
+  rdfs:label "ATENOLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB04 a dakikg:Drug;
+  rdfs:label "ACEBUTOLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB07 a dakikg:Drug;
+  rdfs:label "BISOPROLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB08 a dakikg:Drug;
+  rdfs:label "CELIPROLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB09 a dakikg:Drug;
+  rdfs:label "ESMOLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AB12 a dakikg:Drug;
+  rdfs:label "NEBIVOLOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AG01 a dakikg:Drug;
+  rdfs:label "LABETALOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07AG02 a dakikg:Drug;
+  rdfs:label "CARVEDILOL"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07BB02 a dakikg:Drug;
+  rdfs:label "METOPROLOL AND THIAZIDES"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07BB07 a dakikg:Drug;
+  rdfs:label "BISOPROLOL AND THIAZIDES"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C07CB03 a dakikg:Drug;
+  rdfs:label "ATENOLOL AND OTHER DIURETICS"@en;
+  rdfs:subClassOf atc:C07 .
+
+atc:C08 a dakikg:DrugClass;
+  rdfs:label "CALCIUM CHANNEL BLOCKERS"@en .
+
+atc:C08CA01 a dakikg:Drug;
+  rdfs:label "AMLODIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA02 a dakikg:Drug;
+  rdfs:label "FELODIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA04 a dakikg:Drug;
+  rdfs:label "NICARDIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA05 a dakikg:Drug;
+  rdfs:label "NIFEDIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA06 a dakikg:Drug;
+  rdfs:label "NIMODIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA09 a dakikg:Drug;
+  rdfs:label "LACIDIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA12 a dakikg:Drug;
+  rdfs:label "BARNIDIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08CA13 a dakikg:Drug;
+  rdfs:label "LERCANIDIPINE"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08DA01 a dakikg:Drug;
+  rdfs:label "VERAPAMIL"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08DB01 a dakikg:Drug;
+  rdfs:label "DILTIAZEM"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C08GA02 a dakikg:Drug;
+  rdfs:label "AMLODIPINE AND DIURETICS"@en;
+  rdfs:subClassOf atc:C08 .
+
+atc:C09 a dakikg:DrugClass;
+  rdfs:label "AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM"@en .
+
+atc:C09AA01 a dakikg:Drug;
+  rdfs:label "CAPTOPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA02 a dakikg:Drug;
+  rdfs:label "ENALAPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA03 a dakikg:Drug;
+  rdfs:label "LISINOPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA04 a dakikg:Drug;
+  rdfs:label "PERINDOPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA05 a dakikg:Drug;
+  rdfs:label "RAMIPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA07 a dakikg:Drug;
+  rdfs:label "BENAZEPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA09 a dakikg:Drug;
+  rdfs:label "FOSINOPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09AA15 a dakikg:Drug;
+  rdfs:label "ZOFENOPRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA02 a dakikg:Drug;
+  rdfs:label "ENALAPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA03 a dakikg:Drug;
+  rdfs:label "LISINOPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA04 a dakikg:Drug;
+  rdfs:label "PERINDOPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA05 a dakikg:Drug;
+  rdfs:label "RAMIPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA06 a dakikg:Drug;
+  rdfs:label "QUINAPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BA09 a dakikg:Drug;
+  rdfs:label "FOSINOPRIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BB02 a dakikg:Drug;
+  rdfs:label "ENALAPRIL AND LERCANIDIPINE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BB04 a dakikg:Drug;
+  rdfs:label "PERINDOPRIL AND AMLODIPINE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BB10 a dakikg:Drug;
+  rdfs:label "TRANDOLAPRIL AND VERAPAMIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09BX01 a dakikg:Drug;
+  rdfs:label "PERINDOPRIL, AMLODIPINE AND INDAPAMIDE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA01 a dakikg:Drug;
+  rdfs:label "LOSARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA02 a dakikg:Drug;
+  rdfs:label "EPROSARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA03 a dakikg:Drug;
+  rdfs:label "VALSARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA04 a dakikg:Drug;
+  rdfs:label "IRBESARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA06 a dakikg:Drug;
+  rdfs:label "CANDESARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA07 a dakikg:Drug;
+  rdfs:label "TELMISARTAN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09CA08 a dakikg:Drug;
+  rdfs:label "OLMESARTAN MEDOXOMIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA01 a dakikg:Drug;
+  rdfs:label "LOSARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA02 a dakikg:Drug;
+  rdfs:label "EPROSARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA03 a dakikg:Drug;
+  rdfs:label "VALSARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA04 a dakikg:Drug;
+  rdfs:label "IRBESARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA06 a dakikg:Drug;
+  rdfs:label "CANDESARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA07 a dakikg:Drug;
+  rdfs:label "TELMISARTAN AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DA08 a dakikg:Drug;
+  rdfs:label "OLMESARTAN MEDOXOMIL AND DIURETICS"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DB01 a dakikg:Drug;
+  rdfs:label "VALSARTAN AND AMLODIPINE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DB02 a dakikg:Drug;
+  rdfs:label "OLMESARTAN MEDOXOMIL AND AMLODIPINE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DX01 a dakikg:Drug;
+  rdfs:label "VALSARTAN, AMLODIPINE AND HYDROCHLOROTHIAZIDE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DX03 a dakikg:Drug;
+  rdfs:label "OLMESARTAN MEDOXOMIL, AMLODIPINE AND HYDROCHLOROTHIAZIDE"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09DX04 a dakikg:Drug;
+  rdfs:label "VALSARTAN AND SACUBITRIL"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C09XA02 a dakikg:Drug;
+  rdfs:label "ALISKIREN"@en;
+  rdfs:subClassOf atc:C09 .
+
+atc:C10 a dakikg:DrugClass;
+  rdfs:label "LIPID MODIFYING AGENTS"@en .
+
+atc:C10AA01 a dakikg:Drug;
+  rdfs:label "SIMVASTATIN"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AA03 a dakikg:Drug;
+  rdfs:label "PRAVASTATIN"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AA04 a dakikg:Drug;
+  rdfs:label "FLUVASTATIN"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AA05 a dakikg:Drug;
+  rdfs:label "ATORVASTATIN"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AA07 a dakikg:Drug;
+  rdfs:label "ROSUVASTATIN"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AB02 a dakikg:Drug;
+  rdfs:label "BEZAFIBRATE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AB04 a dakikg:Drug;
+  rdfs:label "GEMFIBROZIL"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AB05 a dakikg:Drug;
+  rdfs:label "FENOFIBRATE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AB08 a dakikg:Drug;
+  rdfs:label "CIPROFIBRATE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AC01 a dakikg:Drug;
+  rdfs:label "COLESTYRAMINE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AC04 a dakikg:Drug;
+  rdfs:label "COLESEVELAM"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10AX09 a dakikg:Drug;
+  rdfs:label "EZETIMIBE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10BA02 a dakikg:Drug;
+  rdfs:label "SIMVASTATIN AND EZETIMIBE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10BA03 a dakikg:Drug;
+  rdfs:label "PRAVASTATIN AND FENOFIBRATE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10BA05 a dakikg:Drug;
+  rdfs:label "ATORVASTATIN AND EZETIMIBE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:C10BA06 a dakikg:Drug;
+  rdfs:label "ROSUVASTATIN AND EZETIMIBE"@en;
+  rdfs:subClassOf atc:C10 .
+
+atc:D01 a dakikg:DrugClass;
+  rdfs:label "ANTIFUNGALS FOR DERMATOLOGICAL USE"@en .
+
+atc:D01BA02 a dakikg:Drug;
+  rdfs:label "TERBINAFINE"@en;
+  rdfs:subClassOf atc:D01 .
+
+atc:D05 a dakikg:DrugClass;
+  rdfs:label "ANTIPSORIATICS"@en .
+
+atc:D05BB02 a dakikg:Drug;
+  rdfs:label "ACITRETIN"@en;
+  rdfs:subClassOf atc:D05 .
+
+atc:D07 a dakikg:DrugClass;
+  rdfs:label "CORTICOSTEROIDS, DERMATOLOGICAL PREPARATIONS"@en .
+
+atc:D07AB09 a dakikg:Drug;
+  rdfs:label "TRIAMCINOLONE"@en;
+  rdfs:subClassOf atc:D07 .
+
+atc:D11 a dakikg:DrugClass;
+  rdfs:label "OTHER DERMATOLOGICAL PREPARATIONS"@en .
+
+atc:D11AX10 a dakikg:Drug;
+  rdfs:label "FINASTERIDE"@en;
+  rdfs:subClassOf atc:D11 .
+
+atc:G01 a dakikg:DrugClass;
+  rdfs:label "GYNECOLOGICAL ANTIINFECTIVES AND ANTISEPTICS"@en .
+
+atc:G01AF01 a dakikg:Drug;
+  rdfs:label "METRONIDAZOLE"@en;
+  rdfs:subClassOf atc:G01 .
+
+atc:G02 a dakikg:DrugClass;
+  rdfs:label "OTHER GYNECOLOGICALS"@en .
+
+atc:G02BA03 a dakikg:Drug;
+  rdfs:label "PLASTIC IUD WITH PROGESTOGEN"@en;
+  rdfs:subClassOf atc:G02 .
+
+atc:G02BB01 a dakikg:Drug;
+  rdfs:label "VAGINAL RING WITH PROGESTOGEN AND ESTROGEN"@en;
+  rdfs:subClassOf atc:G02 .
+
+atc:G03 a dakikg:DrugClass;
+  rdfs:label "SEX HORMONES AND MODULATORS OF THE GENITAL SYSTEM"@en .
+
+atc:G03AA07 a dakikg:Drug;
+  rdfs:label "LEVONORGESTREL AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA09 a dakikg:Drug;
+  rdfs:label "DESOGESTREL AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA10 a dakikg:Drug;
+  rdfs:label "GESTODENE AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA11 a dakikg:Drug;
+  rdfs:label "NORGESTIMATE AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA12 a dakikg:Drug;
+  rdfs:label "DROSPIRENONE AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA13 a dakikg:Drug;
+  rdfs:label "NORELGESTROMIN AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA14 a dakikg:Drug;
+  rdfs:label "NOMEGESTROL AND ESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AA18 a dakikg:Drug;
+  rdfs:label "DROSPIRENONE AND ESTETROL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AB03 a dakikg:Drug;
+  rdfs:label "LEVONORGESTREL AND ETHINYLESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AB08 a dakikg:Drug;
+  rdfs:label "DIENOGEST AND ESTRADIOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AC06 a dakikg:Drug;
+  rdfs:label "MEDROXYPROGESTERONE"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AC08 a dakikg:Drug;
+  rdfs:label "ETONOGESTREL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AC09 a dakikg:Drug;
+  rdfs:label "DESOGESTREL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AD01 a dakikg:Drug;
+  rdfs:label "LEVONORGESTREL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03AD02 a dakikg:Drug;
+  rdfs:label "ULIPRISTAL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03BA03 a dakikg:Drug;
+  rdfs:label "TESTOSTERONE"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03DB08 a dakikg:Drug;
+  rdfs:label "DIENOGEST"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03DC02 a dakikg:Drug;
+  rdfs:label "NORETHISTERONE"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03FA17 a dakikg:Drug;
+  rdfs:label "DROSPIRENONE AND ESTROGEN"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03HA01 a dakikg:Drug;
+  rdfs:label "CYPROTERONE"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03HB01 a dakikg:Drug;
+  rdfs:label "CYPROTERONE AND ESTROGEN"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G03XA01 a dakikg:Drug;
+  rdfs:label "DANAZOL"@en;
+  rdfs:subClassOf atc:G03 .
+
+atc:G04 a dakikg:DrugClass;
+  rdfs:label "UROLOGICALS"@en .
+
+atc:G04BD10 a dakikg:Drug;
+  rdfs:label "DARIFENACIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BD11 a dakikg:Drug;
+  rdfs:label "FESOTERODINE"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BD12 a dakikg:Drug;
+  rdfs:label "MIRABEGRON"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BE03 a dakikg:Drug;
+  rdfs:label "SILDENAFIL"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BE08 a dakikg:Drug;
+  rdfs:label "TADALAFIL"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BE09 a dakikg:Drug;
+  rdfs:label "VARDENAFIL"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BE10 a dakikg:Drug;
+  rdfs:label "AVANAFIL"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BE30 a dakikg:Drug;
+  rdfs:label "COMBINATIONS"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04BX14 a dakikg:Drug;
+  rdfs:label "DAPOXETINE"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA01 a dakikg:Drug;
+  rdfs:label "ALFUZOSIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA02 a dakikg:Drug;
+  rdfs:label "TAMSULOSIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA03 a dakikg:Drug;
+  rdfs:label "TERAZOSIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA04 a dakikg:Drug;
+  rdfs:label "SILODOSIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA52 a dakikg:Drug;
+  rdfs:label "TAMSULOSIN AND DUTASTERIDE"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CA53 a dakikg:Drug;
+  rdfs:label "TAMSULOSIN AND SOLIFENACIN"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CB01 a dakikg:Drug;
+  rdfs:label "FINASTERIDE"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:G04CB02 a dakikg:Drug;
+  rdfs:label "DUTASTERIDE"@en;
+  rdfs:subClassOf atc:G04 .
+
+atc:H01 a dakikg:DrugClass;
+  rdfs:label "PITUITARY AND HYPOTHALAMIC HORMONES AND ANALOGUES"@en .
+
+atc:H01AC01 a dakikg:Drug;
+  rdfs:label "SOMATROPIN"@en;
+  rdfs:subClassOf atc:H01 .
+
+atc:H01BA02 a dakikg:Drug;
+  rdfs:label "DESMOPRESSIN"@en;
+  rdfs:subClassOf atc:H01 .
+
+atc:H01BA04 a dakikg:Drug;
+  rdfs:label "TERLIPRESSIN"@en;
+  rdfs:subClassOf atc:H01 .
+
+atc:H01CB02 a dakikg:Drug;
+  rdfs:label "OCTREOTIDE"@en;
+  rdfs:subClassOf atc:H01 .
+
+atc:H02 a dakikg:DrugClass;
+  rdfs:label "CORTICOSTEROIDS FOR SYSTEMIC USE"@en .
+
+atc:H02AA02 a dakikg:Drug;
+  rdfs:label "FLUDROCORTISONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB01 a dakikg:Drug;
+  rdfs:label "BETAMETHASONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB02 a dakikg:Drug;
+  rdfs:label "DEXAMETHASONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB04 a dakikg:Drug;
+  rdfs:label "METHYLPREDNISOLONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB06 a dakikg:Drug;
+  rdfs:label "PREDNISOLONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB07 a dakikg:Drug;
+  rdfs:label "PREDNISONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB08 a dakikg:Drug;
+  rdfs:label "TRIAMCINOLONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB09 a dakikg:Drug;
+  rdfs:label "HYDROCORTISONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB10 a dakikg:Drug;
+  rdfs:label "CORTISONE"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H02AB13 a dakikg:Drug;
+  rdfs:label "DEFLAZACORT"@en;
+  rdfs:subClassOf atc:H02 .
+
+atc:H03 a dakikg:DrugClass;
+  rdfs:label "THYROID THERAPY"@en .
+
+atc:H03AA01 a dakikg:Drug;
+  rdfs:label "LEVOTHYROXINE SODIUM"@en;
+  rdfs:subClassOf atc:H03 .
+
+atc:H03AA02 a dakikg:Drug;
+  rdfs:label "LIOTHYRONINE SODIUM"@en;
+  rdfs:subClassOf atc:H03 .
+
+atc:H05 a dakikg:DrugClass;
+  rdfs:label "CALCIUM HOMEOSTASIS"@en .
+
+atc:H05BX01 a dakikg:Drug;
+  rdfs:label "CINACALCET"@en;
+  rdfs:subClassOf atc:H05 .
+
+atc:H05BX02 a dakikg:Drug;
+  rdfs:label "PARICALCITOL"@en;
+  rdfs:subClassOf atc:H05 .
+
+atc:H05BX04 a dakikg:Drug;
+  rdfs:label "ETELCALCETIDE"@en;
+  rdfs:subClassOf atc:H05 .
+
+atc:J01 a dakikg:DrugClass;
+  rdfs:label "ANTIBACTERIALS FOR SYSTEMIC USE"@en .
+
+atc:J01AA01 a dakikg:Drug;
+  rdfs:label "DEMECLOCYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01AA02 a dakikg:Drug;
+  rdfs:label "DOXYCYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01AA07 a dakikg:Drug;
+  rdfs:label "TETRACYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01AA08 a dakikg:Drug;
+  rdfs:label "MINOCYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01AA12 a dakikg:Drug;
+  rdfs:label "TIGECYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01AA13 a dakikg:Drug;
+  rdfs:label "ERAVACYCLINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01CA04 a dakikg:Drug;
+  rdfs:label "AMOXICILLIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01CE01 a dakikg:Drug;
+  rdfs:label "BENZYLPENICILLIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01CF05 a dakikg:Drug;
+  rdfs:label "FLUCLOXACILLIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01CR02 a dakikg:Drug;
+  rdfs:label "AMOXICILLIN AND BETA-LACTAMASE INHIBITOR"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01CR05 a dakikg:Drug;
+  rdfs:label "PIPERACILLIN AND BETA-LACTAMASE INHIBITOR"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01DC02 a dakikg:Drug;
+  rdfs:label "CEFUROXIME"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01DD04 a dakikg:Drug;
+  rdfs:label "CEFTRIAXONE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01EA01 a dakikg:Drug;
+  rdfs:label "TRIMETHOPRIM"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01EE01 a dakikg:Drug;
+  rdfs:label "SULFAMETHOXAZOLE AND TRIMETHOPRIM"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01EE03 a dakikg:Drug;
+  rdfs:label "SULFAMETROLE AND TRIMETHOPRIM"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01FA01 a dakikg:Drug;
+  rdfs:label "ERYTHROMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01FA09 a dakikg:Drug;
+  rdfs:label "CLARITHROMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01FA10 a dakikg:Drug;
+  rdfs:label "AZITHROMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01FF01 a dakikg:Drug;
+  rdfs:label "CLINDAMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01GB01 a dakikg:Drug;
+  rdfs:label "TOBRAMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01GB03 a dakikg:Drug;
+  rdfs:label "GENTAMICIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01GB06 a dakikg:Drug;
+  rdfs:label "AMIKACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01MA01 a dakikg:Drug;
+  rdfs:label "OFLOXACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01MA02 a dakikg:Drug;
+  rdfs:label "CIPROFLOXACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01MA06 a dakikg:Drug;
+  rdfs:label "NORFLOXACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01MA12 a dakikg:Drug;
+  rdfs:label "LEVOFLOXACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01MA14 a dakikg:Drug;
+  rdfs:label "MOXIFLOXACIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XA01 a dakikg:Drug;
+  rdfs:label "VANCOMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XB01 a dakikg:Drug;
+  rdfs:label "COLISTIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XD01 a dakikg:Drug;
+  rdfs:label "METRONIDAZOLE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XE01 a dakikg:Drug;
+  rdfs:label "NITROFURANTOIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XX05 a dakikg:Drug;
+  rdfs:label "METHENAMINE"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J01XX09 a dakikg:Drug;
+  rdfs:label "DAPTOMYCIN"@en;
+  rdfs:subClassOf atc:J01 .
+
+atc:J02 a dakikg:DrugClass;
+  rdfs:label "ANTIMYCOTICS FOR SYSTEMIC USE"@en .
+
+atc:J02AA01 a dakikg:Drug;
+  rdfs:label "AMPHOTERICIN B"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AB02 a dakikg:Drug;
+  rdfs:label "KETOCONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AC01 a dakikg:Drug;
+  rdfs:label "FLUCONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AC02 a dakikg:Drug;
+  rdfs:label "ITRACONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AC03 a dakikg:Drug;
+  rdfs:label "VORICONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AC04 a dakikg:Drug;
+  rdfs:label "POSACONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AC05 a dakikg:Drug;
+  rdfs:label "ISAVUCONAZOLE"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AX04 a dakikg:Drug;
+  rdfs:label "CASPOFUNGIN"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J02AX05 a dakikg:Drug;
+  rdfs:label "MICAFUNGIN"@en;
+  rdfs:subClassOf atc:J02 .
+
+atc:J04 a dakikg:DrugClass;
+  rdfs:label "ANTIMYCOBACTERIALS"@en .
+
+atc:J04AB02 a dakikg:Drug;
+  rdfs:label "RIFAMPICIN"@en;
+  rdfs:subClassOf atc:J04 .
+
+atc:J04AB04 a dakikg:Drug;
+  rdfs:label "RIFABUTIN"@en;
+  rdfs:subClassOf atc:J04 .
+
+atc:J04AK05 a dakikg:Drug;
+  rdfs:label "BEDAQUILINE"@en;
+  rdfs:subClassOf atc:J04 .
+
+atc:J04AM02 a dakikg:Drug;
+  rdfs:label "RIFAMPICIN AND ISONIAZID"@en;
+  rdfs:subClassOf atc:J04 .
+
+atc:J04BA02 a dakikg:Drug;
+  rdfs:label "DAPSONE"@en;
+  rdfs:subClassOf atc:J04 .
+
+atc:J05 a dakikg:DrugClass;
+  rdfs:label "ANTIVIRALS FOR SYSTEMIC USE"@en .
+
+atc:J05AB01 a dakikg:Drug;
+  rdfs:label "ACICLOVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AB06 a dakikg:Drug;
+  rdfs:label "GANCICLOVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AB11 a dakikg:Drug;
+  rdfs:label "VALACICLOVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AB14 a dakikg:Drug;
+  rdfs:label "VALGANCICLOVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AD01 a dakikg:Drug;
+  rdfs:label "FOSCARNET"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AE03 a dakikg:Drug;
+  rdfs:label "RITONAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AE07 a dakikg:Drug;
+  rdfs:label "FOSAMPRENAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AE08 a dakikg:Drug;
+  rdfs:label "ATAZANAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AE10 a dakikg:Drug;
+  rdfs:label "DARUNAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AE30 a dakikg:Drug;
+  rdfs:label "NIRMATRELVIR AND RITONAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AF01 a dakikg:Drug;
+  rdfs:label "ZIDOVUDINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AF06 a dakikg:Drug;
+  rdfs:label "ABACAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AF07 a dakikg:Drug;
+  rdfs:label "TENOFOVIR DISOPROXIL"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AF13 a dakikg:Drug;
+  rdfs:label "TENOFOVIR ALAFENAMIDE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AG01 a dakikg:Drug;
+  rdfs:label "NEVIRAPINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AG03 a dakikg:Drug;
+  rdfs:label "EFAVIRENZ"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AG04 a dakikg:Drug;
+  rdfs:label "ETRAVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AG05 a dakikg:Drug;
+  rdfs:label "RILPIVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AG06 a dakikg:Drug;
+  rdfs:label "DORAVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AJ01 a dakikg:Drug;
+  rdfs:label "RALTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AJ03 a dakikg:Drug;
+  rdfs:label "DOLUTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AJ04 a dakikg:Drug;
+  rdfs:label "CABOTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP08 a dakikg:Drug;
+  rdfs:label "SOFOSBUVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP51 a dakikg:Drug;
+  rdfs:label "SOFOSBUVIR AND LEDIPASVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP54 a dakikg:Drug;
+  rdfs:label "ELBASVIR AND GRAZOPREVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP55 a dakikg:Drug;
+  rdfs:label "SOFOSBUVIR AND VELPATASVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP56 a dakikg:Drug;
+  rdfs:label "SOFOSBUVIR, VELPATASVIR AND VOXILAPREVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AP57 a dakikg:Drug;
+  rdfs:label "GLECAPREVIR AND PIBRENTASVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR01 a dakikg:Drug;
+  rdfs:label "ZIDOVUDINE AND LAMIVUDINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR03 a dakikg:Drug;
+  rdfs:label "TENOFOVIR DISOPROXIL AND EMTRICITABINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR04 a dakikg:Drug;
+  rdfs:label "ZIDOVUDINE, LAMIVUDINE AND ABACAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR06 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR DISOPROXIL AND EFAVIRENZ"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR08 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR DISOPROXIL AND RILPIVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR09 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR DISOPROXIL, ELVITEGRAVIR AND COBICISTAT"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR10 a dakikg:Drug;
+  rdfs:label "LOPINAVIR AND RITONAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR13 a dakikg:Drug;
+  rdfs:label "LAMIVUDINE, ABACAVIR AND DOLUTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR14 a dakikg:Drug;
+  rdfs:label "DARUNAVIR AND COBICISTAT"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR18 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR ALAFENAMIDE, ELVITEGRAVIR AND COBICISTAT"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR19 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR ALAFENAMIDE AND RILPIVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR20 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR ALAFENAMIDE AND BICTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR21 a dakikg:Drug;
+  rdfs:label "DOLUTEGRAVIR AND RILPIVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR22 a dakikg:Drug;
+  rdfs:label "EMTRICITABINE, TENOFOVIR ALAFENAMIDE, DARUNAVIR AND COBICISTAT"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR24 a dakikg:Drug;
+  rdfs:label "LAMIVUDINE, TENOFOVIR DISOPROXIL AND DORAVIRINE"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AR25 a dakikg:Drug;
+  rdfs:label "LAMIVUDINE AND DOLUTEGRAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AX09 a dakikg:Drug;
+  rdfs:label "MARAVIROC"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AX18 a dakikg:Drug;
+  rdfs:label "LETERMOVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AX29 a dakikg:Drug;
+  rdfs:label "FOSTEMSAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J05AX31 a dakikg:Drug;
+  rdfs:label "LENACAPAVIR"@en;
+  rdfs:subClassOf atc:J05 .
+
+atc:J06 a dakikg:DrugClass;
+  rdfs:label "IMMUNE SERA AND IMMUNOGLOBULINS"@en .
+
+atc:J06BA02 a dakikg:Drug;
+  rdfs:label "IMMUNOGLOBULINS, NORMAL HUMAN, FOR INTRAVASCULAR ADM."@en;
+  rdfs:subClassOf atc:J06 .
+
+atc:J07 a dakikg:DrugClass;
+  rdfs:label "VACCINES"@en .
+
+atc:J07AE01 a dakikg:Drug;
+  rdfs:label "CHOLERA, INACTIVATED, WHOLE CELL"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AG01 a dakikg:Drug;
+  rdfs:label "HAEMOPHILUS INFLUENZAE B, PURIFIED ANTIGEN CONJUGATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AH07 a dakikg:Drug;
+  rdfs:label "MENINGOCOCCUS C, PURIFIED POLYSACCHARIDES ANTIGEN CONJUGATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AH08 a dakikg:Drug;
+  rdfs:label "MENINGOCOC A,C,Y,W-135,TETRA.PUR.POLYS.ANTIG CONJ."@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AH09 a dakikg:Drug;
+  rdfs:label "MENINGOCOCCUS B, MULTICOMPONENT VACCINE"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AJ52 a dakikg:Drug;
+  rdfs:label "PERTUSSIS, PURIFIED ANTIGEN, COMBINATIONS WITH TOXOIDS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AL01 a dakikg:Drug;
+  rdfs:label "PNEUMOCOCCUS, PURIFIED POLYSACCHARIDES ANTIGEN"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AL02 a dakikg:Drug;
+  rdfs:label "PNEUMOCOCCUS, PURIFIED POLYSACCHARIDES ANTIGEN CONJUGATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AL52 a dakikg:Drug;
+  rdfs:label "PNEUMOCOCCUS PURIFIED POLYS ANTIG AND HAEMOPH INFL"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AM01 a dakikg:Drug;
+  rdfs:label "TETANUS TOXOID"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AN01 a dakikg:Drug;
+  rdfs:label "TUBERCULOSIS, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AP03 a dakikg:Drug;
+  rdfs:label "TYPHOID, PURIFIED POLYSACCHARIDE ANTIGEN"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07AX01 a dakikg:Drug;
+  rdfs:label "LEPTOSPIRA VACCINES"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BA01 a dakikg:Drug;
+  rdfs:label "ENCEPHALITIS, TICK BORNE, INACTIVATED, WHOLE VIRUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BA02 a dakikg:Drug;
+  rdfs:label "ENCEPHALITIS, JAPANESE, INACTIVATED, WHOLE VIRUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BB02 a dakikg:Drug;
+  rdfs:label "INFLUENZA, INACTIVATED, SPLIT VIRUS OR SURFACE ANTIGEN"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BC01 a dakikg:Drug;
+  rdfs:label "HEPATITIS B, PURIFIED ANTIGEN"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BC02 a dakikg:Drug;
+  rdfs:label "HEPATITIS A, INACTIVATED, WHOLE VIRUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BC20 a dakikg:Drug;
+  rdfs:label "COMBINATIONS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BD52 a dakikg:Drug;
+  rdfs:label "MEASLES, COMBINATIONS WITH MUMPS AND RUBELLA, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BF03 a dakikg:Drug;
+  rdfs:label "POLIOMYELITIS, TRIVALENT, INACTIVATED, WHOLE VIRUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BG01 a dakikg:Drug;
+  rdfs:label "RABIES, INACTIVATED, WHOLE VIRUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BH01 a dakikg:Drug;
+  rdfs:label "ROTA VIRUS, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BK01 a dakikg:Drug;
+  rdfs:label "VARICELLA, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BK02 a dakikg:Drug;
+  rdfs:label "ZOSTER, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BK03 a dakikg:Drug;
+  rdfs:label "ZOSTER, PURIFIED ANTIGEN"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BL01 a dakikg:Drug;
+  rdfs:label "YELLOW FEVER, LIVE ATTENUATED"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BM01 a dakikg:Drug;
+  rdfs:label "PAPILLOMAVIRUS (HUMAN TYPES 6, 11, 16, 18)"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BM02 a dakikg:Drug;
+  rdfs:label "PAPILLOMAVIRUS (HUMAN TYPES 16, 18)"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BM03 a dakikg:Drug;
+  rdfs:label "PAPILLOMAVIRUS (HUMAN TYPES 6, 11, 16, 18, 31, 33, 45, 52, 58)"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BN01 a dakikg:Drug;
+  rdfs:label "COVID-19, RNA-BASED VACCINE"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07BX04 a dakikg:Drug;
+  rdfs:label "DENGUE VIRUS VACCINES"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07CA01 a dakikg:Drug;
+  rdfs:label "DIPHTHERIA-POLIOMYELITIS-TETANUS"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:J07CA09 a dakikg:Drug;
+  rdfs:label "DIPHTHERIA-HAEMOPHILUS INFLUENZAE B-PERTUSSIS-POLIOMYELITIS-TETANUS-HEPATITIS B"@en;
+  rdfs:subClassOf atc:J07 .
+
+atc:L01 a dakikg:DrugClass;
+  rdfs:label "ANTINEOPLASTIC AGENTS"@en .
+
+atc:L01AA01 a dakikg:Drug;
+  rdfs:label "CYCLOPHOSPHAMIDE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AA02 a dakikg:Drug;
+  rdfs:label "CHLORAMBUCIL"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AA03 a dakikg:Drug;
+  rdfs:label "MELPHALAN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AA06 a dakikg:Drug;
+  rdfs:label "IFOSFAMIDE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AA09 a dakikg:Drug;
+  rdfs:label "BENDAMUSTINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AB01 a dakikg:Drug;
+  rdfs:label "BUSULFAN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01AD01 a dakikg:Drug;
+  rdfs:label "CARMUSTINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BA01 a dakikg:Drug;
+  rdfs:label "METHOTREXATE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BA04 a dakikg:Drug;
+  rdfs:label "PEMETREXED"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BB02 a dakikg:Drug;
+  rdfs:label "MERCAPTOPURINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BB03 a dakikg:Drug;
+  rdfs:label "TIOGUANINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BC01 a dakikg:Drug;
+  rdfs:label "CYTARABINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BC02 a dakikg:Drug;
+  rdfs:label "FLUOROURACIL"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01BC06 a dakikg:Drug;
+  rdfs:label "CAPECITABINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CA01 a dakikg:Drug;
+  rdfs:label "VINBLASTINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CA02 a dakikg:Drug;
+  rdfs:label "VINCRISTINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CA04 a dakikg:Drug;
+  rdfs:label "VINORELBINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CB01 a dakikg:Drug;
+  rdfs:label "ETOPOSIDE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CD01 a dakikg:Drug;
+  rdfs:label "PACLITAXEL"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CD02 a dakikg:Drug;
+  rdfs:label "DOCETAXEL"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CD04 a dakikg:Drug;
+  rdfs:label "CABAZITAXEL"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CE02 a dakikg:Drug;
+  rdfs:label "IRINOTECAN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01CX01 a dakikg:Drug;
+  rdfs:label "TRABECTEDIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DB01 a dakikg:Drug;
+  rdfs:label "DOXORUBICIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DB02 a dakikg:Drug;
+  rdfs:label "DAUNORUBICIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DB03 a dakikg:Drug;
+  rdfs:label "EPIRUBICIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DB06 a dakikg:Drug;
+  rdfs:label "IDARUBICIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DB07 a dakikg:Drug;
+  rdfs:label "MITOXANTRONE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DC01 a dakikg:Drug;
+  rdfs:label "BLEOMYCIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01DC03 a dakikg:Drug;
+  rdfs:label "MITOMYCIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EA01 a dakikg:Drug;
+  rdfs:label "IMATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EA02 a dakikg:Drug;
+  rdfs:label "DASATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EA03 a dakikg:Drug;
+  rdfs:label "NILOTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EA04 a dakikg:Drug;
+  rdfs:label "BOSUTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EA05 a dakikg:Drug;
+  rdfs:label "PONATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EB01 a dakikg:Drug;
+  rdfs:label "GEFITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EB02 a dakikg:Drug;
+  rdfs:label "ERLOTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EB03 a dakikg:Drug;
+  rdfs:label "AFATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EB04 a dakikg:Drug;
+  rdfs:label "OSIMERTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EB07 a dakikg:Drug;
+  rdfs:label "DACOMITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EC01 a dakikg:Drug;
+  rdfs:label "VEMURAFENIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EC02 a dakikg:Drug;
+  rdfs:label "DABRAFENIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EC03 a dakikg:Drug;
+  rdfs:label "ENCORAFENIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01ED01 a dakikg:Drug;
+  rdfs:label "CRIZOTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01ED02 a dakikg:Drug;
+  rdfs:label "CERITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01ED03 a dakikg:Drug;
+  rdfs:label "ALECTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01ED04 a dakikg:Drug;
+  rdfs:label "BRIGATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01ED05 a dakikg:Drug;
+  rdfs:label "LORLATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EE02 a dakikg:Drug;
+  rdfs:label "COBIMETINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EE03 a dakikg:Drug;
+  rdfs:label "BINIMETINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EF01 a dakikg:Drug;
+  rdfs:label "PALBOCICLIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EF02 a dakikg:Drug;
+  rdfs:label "RIBOCICLIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EF03 a dakikg:Drug;
+  rdfs:label "ABEMACICLIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EG01 a dakikg:Drug;
+  rdfs:label "TEMSIROLIMUS"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EG02 a dakikg:Drug;
+  rdfs:label "EVEROLIMUS"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EH01 a dakikg:Drug;
+  rdfs:label "LAPATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EH02 a dakikg:Drug;
+  rdfs:label "NERATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EJ01 a dakikg:Drug;
+  rdfs:label "RUXOLITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EJ02 a dakikg:Drug;
+  rdfs:label "FEDRATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EK01 a dakikg:Drug;
+  rdfs:label "AXITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EK03 a dakikg:Drug;
+  rdfs:label "TIVOZANIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EL01 a dakikg:Drug;
+  rdfs:label "IBRUTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EL02 a dakikg:Drug;
+  rdfs:label "ACALABRUTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EM01 a dakikg:Drug;
+  rdfs:label "IDELALISIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EM03 a dakikg:Drug;
+  rdfs:label "ALPELISIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX01 a dakikg:Drug;
+  rdfs:label "SUNITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX02 a dakikg:Drug;
+  rdfs:label "SORAFENIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX03 a dakikg:Drug;
+  rdfs:label "PAZOPANIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX04 a dakikg:Drug;
+  rdfs:label "VANDETANIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX05 a dakikg:Drug;
+  rdfs:label "REGORAFENIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX07 a dakikg:Drug;
+  rdfs:label "CABOZANTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX08 a dakikg:Drug;
+  rdfs:label "LENVATINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX09 a dakikg:Drug;
+  rdfs:label "NINTEDANIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX10 a dakikg:Drug;
+  rdfs:label "MIDOSTAURIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX12 a dakikg:Drug;
+  rdfs:label "LAROTRECTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX13 a dakikg:Drug;
+  rdfs:label "GILTERITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX14 a dakikg:Drug;
+  rdfs:label "ENTRECTINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01EX18 a dakikg:Drug;
+  rdfs:label "AVAPRITINIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01FX05 a dakikg:Drug;
+  rdfs:label "BRENTUXIMAB VEDOTIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01FX14 a dakikg:Drug;
+  rdfs:label "POLATUZUMAB VEDOTIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XA01 a dakikg:Drug;
+  rdfs:label "CISPLATIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XA02 a dakikg:Drug;
+  rdfs:label "CARBOPLATIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XA03 a dakikg:Drug;
+  rdfs:label "OXALIPLATIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XB01 a dakikg:Drug;
+  rdfs:label "PROCARBAZINE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XF03 a dakikg:Drug;
+  rdfs:label "BEXAROTENE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XG01 a dakikg:Drug;
+  rdfs:label "BORTEZOMIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XG03 a dakikg:Drug;
+  rdfs:label "IXAZOMIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XH03 a dakikg:Drug;
+  rdfs:label "PANOBINOSTAT"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XJ01 a dakikg:Drug;
+  rdfs:label "VISMODEGIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XJ02 a dakikg:Drug;
+  rdfs:label "SONIDEGIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XK01 a dakikg:Drug;
+  rdfs:label "OLAPARIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XK03 a dakikg:Drug;
+  rdfs:label "RUCAPARIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XK04 a dakikg:Drug;
+  rdfs:label "TALAZOPARIB"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XX23 a dakikg:Drug;
+  rdfs:label "MITOTANE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XX27 a dakikg:Drug;
+  rdfs:label "ARSENIC TRIOXIDE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XX35 a dakikg:Drug;
+  rdfs:label "ANAGRELIDE"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XX41 a dakikg:Drug;
+  rdfs:label "ERIBULIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XX52 a dakikg:Drug;
+  rdfs:label "VENETOCLAX"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L01XY01 a dakikg:Drug;
+  rdfs:label "CYTARABINE AND DAUNORUBICIN"@en;
+  rdfs:subClassOf atc:L01 .
+
+atc:L02 a dakikg:DrugClass;
+  rdfs:label "ENDOCRINE THERAPY"@en .
+
+atc:L02AB01 a dakikg:Drug;
+  rdfs:label "MEGESTROL"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BA01 a dakikg:Drug;
+  rdfs:label "TAMOXIFEN"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BA03 a dakikg:Drug;
+  rdfs:label "FULVESTRANT"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BB02 a dakikg:Drug;
+  rdfs:label "NILUTAMIDE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BB03 a dakikg:Drug;
+  rdfs:label "BICALUTAMIDE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BB04 a dakikg:Drug;
+  rdfs:label "ENZALUTAMIDE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BB05 a dakikg:Drug;
+  rdfs:label "APALUTAMIDE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BB06 a dakikg:Drug;
+  rdfs:label "DAROLUTAMIDE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BG03 a dakikg:Drug;
+  rdfs:label "ANASTROZOLE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BG04 a dakikg:Drug;
+  rdfs:label "LETROZOLE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BG06 a dakikg:Drug;
+  rdfs:label "EXEMESTANE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L02BX03 a dakikg:Drug;
+  rdfs:label "ABIRATERONE"@en;
+  rdfs:subClassOf atc:L02 .
+
+atc:L03 a dakikg:DrugClass;
+  rdfs:label "IMMUNOSTIMULANTS"@en .
+
+atc:L03AA02 a dakikg:Drug;
+  rdfs:label "FILGRASTIM"@en;
+  rdfs:subClassOf atc:L03 .
+
+atc:L03AA13 a dakikg:Drug;
+  rdfs:label "PEGFILGRASTIM"@en;
+  rdfs:subClassOf atc:L03 .
+
+atc:L03AA14 a dakikg:Drug;
+  rdfs:label "LIPEGFILGRASTIM"@en;
+  rdfs:subClassOf atc:L03 .
+
+atc:L03AX03 a dakikg:Drug;
+  rdfs:label "BCG VACCINE"@en;
+  rdfs:subClassOf atc:L03 .
+
+atc:L03AX10 a dakikg:Drug;
+  rdfs:label "IMMUNOCYANIN"@en;
+  rdfs:subClassOf atc:L03 .
+
+atc:L04 a dakikg:DrugClass;
+  rdfs:label "IMMUNOSUPPRESSANTS"@en .
+
+atc:L04AA06 a dakikg:Drug;
+  rdfs:label "MYCOPHENOLIC ACID"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AA32 a dakikg:Drug;
+  rdfs:label "APREMILAST"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AB01 a dakikg:Drug;
+  rdfs:label "ETANERCEPT"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AB02 a dakikg:Drug;
+  rdfs:label "INFLIXIMAB"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AB04 a dakikg:Drug;
+  rdfs:label "ADALIMUMAB"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AB05 a dakikg:Drug;
+  rdfs:label "CERTOLIZUMAB PEGOL"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AB06 a dakikg:Drug;
+  rdfs:label "GOLIMUMAB"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AC07 a dakikg:Drug;
+  rdfs:label "TOCILIZUMAB"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AD01 a dakikg:Drug;
+  rdfs:label "CICLOSPORIN"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AD02 a dakikg:Drug;
+  rdfs:label "TACROLIMUS"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AH01 a dakikg:Drug;
+  rdfs:label "SIROLIMUS"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AX01 a dakikg:Drug;
+  rdfs:label "AZATHIOPRINE"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AX02 a dakikg:Drug;
+  rdfs:label "THALIDOMIDE"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AX03 a dakikg:Drug;
+  rdfs:label "METHOTREXATE"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AX04 a dakikg:Drug;
+  rdfs:label "LENALIDOMIDE"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:L04AX05 a dakikg:Drug;
+  rdfs:label "PIRFENIDONE"@en;
+  rdfs:subClassOf atc:L04 .
+
+atc:M01 a dakikg:DrugClass;
+  rdfs:label "ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS"@en .
+
+atc:M01AA01 a dakikg:Drug;
+  rdfs:label "PHENYLBUTAZONE"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AB01 a dakikg:Drug;
+  rdfs:label "INDOMETACIN"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AB05 a dakikg:Drug;
+  rdfs:label "DICLOFENAC"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AB16 a dakikg:Drug;
+  rdfs:label "ACECLOFENAC"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AB55 a dakikg:Drug;
+  rdfs:label "DICLOFENAC, COMBINATIONS"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AC06 a dakikg:Drug;
+  rdfs:label "MELOXICAM"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AE01 a dakikg:Drug;
+  rdfs:label "IBUPROFEN"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AE02 a dakikg:Drug;
+  rdfs:label "NAPROXEN"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AE03 a dakikg:Drug;
+  rdfs:label "KETOPROFEN"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AE17 a dakikg:Drug;
+  rdfs:label "DEXKETOPROFEN"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AE52 a dakikg:Drug;
+  rdfs:label "NAPROXEN AND ESOMEPRAZOLE"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AH01 a dakikg:Drug;
+  rdfs:label "CELECOXIB"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AH04 a dakikg:Drug;
+  rdfs:label "PARECOXIB"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AH05 a dakikg:Drug;
+  rdfs:label "ETORICOXIB"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M01AX01 a dakikg:Drug;
+  rdfs:label "NABUMETONE"@en;
+  rdfs:subClassOf atc:M01 .
+
+atc:M03 a dakikg:DrugClass;
+  rdfs:label "MUSCLE RELAXANTS"@en .
+
+atc:M03AB01 a dakikg:Drug;
+  rdfs:label "SUXAMETHONIUM"@en;
+  rdfs:subClassOf atc:M03 .
+
+atc:M03AC10 a dakikg:Drug;
+  rdfs:label "MIVACURIUM CHLORIDE"@en;
+  rdfs:subClassOf atc:M03 .
+
+atc:M03BX02 a dakikg:Drug;
+  rdfs:label "TIZANIDINE"@en;
+  rdfs:subClassOf atc:M03 .
+
+atc:M04 a dakikg:DrugClass;
+  rdfs:label "ANTIGOUT PREPARATIONS"@en .
+
+atc:M04AA01 a dakikg:Drug;
+  rdfs:label "ALLOPURINOL"@en;
+  rdfs:subClassOf atc:M04 .
+
+atc:M04AA03 a dakikg:Drug;
+  rdfs:label "FEBUXOSTAT"@en;
+  rdfs:subClassOf atc:M04 .
+
+atc:M04AB01 a dakikg:Drug;
+  rdfs:label "PROBENECID"@en;
+  rdfs:subClassOf atc:M04 .
+
+atc:M04AC01 a dakikg:Drug;
+  rdfs:label "COLCHICINE"@en;
+  rdfs:subClassOf atc:M04 .
+
+atc:M05 a dakikg:DrugClass;
+  rdfs:label "DRUGS FOR TREATMENT OF BONE DISEASES"@en .
+
+atc:M05BA02 a dakikg:Drug;
+  rdfs:label "CLODRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BA03 a dakikg:Drug;
+  rdfs:label "PAMIDRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BA04 a dakikg:Drug;
+  rdfs:label "ALENDRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BA06 a dakikg:Drug;
+  rdfs:label "IBANDRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BA07 a dakikg:Drug;
+  rdfs:label "RISEDRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BA08 a dakikg:Drug;
+  rdfs:label "ZOLEDRONIC ACID"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BB02 a dakikg:Drug;
+  rdfs:label "RISEDRONIC ACID AND CALCIUM, SEQUENTIAL"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BB03 a dakikg:Drug;
+  rdfs:label "ALENDRONIC ACID AND COLECALCIFEROL"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M05BX05 a dakikg:Drug;
+  rdfs:label "BUROSUMAB"@en;
+  rdfs:subClassOf atc:M05 .
+
+atc:M09 a dakikg:DrugClass;
+  rdfs:label "OTHER DRUGS FOR DISORDERS OF THE MUSCULO-SKELETAL SYSTEM"@en .
+
+atc:M09AA01 a dakikg:Drug;
+  rdfs:label "HYDROQUININE"@en;
+  rdfs:subClassOf atc:M09 .
+
+atc:M09AX03 a dakikg:Drug;
+  rdfs:label "ATALUREN"@en;
+  rdfs:subClassOf atc:M09 .
+
+atc:N01 a dakikg:DrugClass;
+  rdfs:label "ANESTHETICS"@en .
+
+atc:N01AB08 a dakikg:Drug;
+  rdfs:label "SEVOFLURANE"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01AH01 a dakikg:Drug;
+  rdfs:label "FENTANYL"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01AX10 a dakikg:Drug;
+  rdfs:label "PROPOFOL"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01BB20 a dakikg:Drug;
+  rdfs:label "COMBINATIONS"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01BB51 a dakikg:Drug;
+  rdfs:label "BUPIVACAINE, COMBINATIONS"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01BB52 a dakikg:Drug;
+  rdfs:label "LIDOCAINE, COMBINATIONS"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N01BB58 a dakikg:Drug;
+  rdfs:label "ARTICAINE, COMBINATIONS"@en;
+  rdfs:subClassOf atc:N01 .
+
+atc:N02 a dakikg:DrugClass;
+  rdfs:label "ANALGESICS"@en .
+
+atc:N02AA01 a dakikg:Drug;
+  rdfs:label "MORPHINE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AA05 a dakikg:Drug;
+  rdfs:label "OXYCODONE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AA55 a dakikg:Drug;
+  rdfs:label "OXYCODONE AND NALOXONE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AB03 a dakikg:Drug;
+  rdfs:label "FENTANYL"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AE01 a dakikg:Drug;
+  rdfs:label "BUPRENORPHINE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AF02 a dakikg:Drug;
+  rdfs:label "NALBUPHINE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AJ06 a dakikg:Drug;
+  rdfs:label "CODEINE AND PARACETAMOL"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AJ13 a dakikg:Drug;
+  rdfs:label "TRAMADOL AND PARACETAMOL"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02AX02 a dakikg:Drug;
+  rdfs:label "TRAMADOL"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BA01 a dakikg:Drug;
+  rdfs:label "ACETYLSALICYLIC ACID"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BA15 a dakikg:Drug;
+  rdfs:label "CARBASALATE CALCIUM"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BA51 a dakikg:Drug;
+  rdfs:label "ACETYLSALICYLIC ACID, COMBINATIONS EXCL. PSYCHOLEPTICS"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BB02 a dakikg:Drug;
+  rdfs:label "METAMIZOLE SODIUM"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BE01 a dakikg:Drug;
+  rdfs:label "PARACETAMOL"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02BE51 a dakikg:Drug;
+  rdfs:label "PARACETAMOL, COMBINATIONS EXCL. PSYCHOLEPTICS"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02CC04 a dakikg:Drug;
+  rdfs:label "RIZATRIPTAN"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02CC06 a dakikg:Drug;
+  rdfs:label "ELETRIPTAN"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N02CX02 a dakikg:Drug;
+  rdfs:label "CLONIDINE"@en;
+  rdfs:subClassOf atc:N02 .
+
+atc:N03 a dakikg:DrugClass;
+  rdfs:label "ANTIEPILEPTICS"@en .
+
+atc:N03AA02 a dakikg:Drug;
+  rdfs:label "PHENOBARBITAL"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AA03 a dakikg:Drug;
+  rdfs:label "PRIMIDONE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AB02 a dakikg:Drug;
+  rdfs:label "PHENYTOIN"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AE01 a dakikg:Drug;
+  rdfs:label "CLONAZEPAM"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AF01 a dakikg:Drug;
+  rdfs:label "CARBAMAZEPINE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AF02 a dakikg:Drug;
+  rdfs:label "OXCARBAZEPINE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AG01 a dakikg:Drug;
+  rdfs:label "VALPROIC ACID"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX09 a dakikg:Drug;
+  rdfs:label "LAMOTRIGINE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX11 a dakikg:Drug;
+  rdfs:label "TOPIRAMATE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX14 a dakikg:Drug;
+  rdfs:label "LEVETIRACETAM"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX15 a dakikg:Drug;
+  rdfs:label "ZONISAMIDE"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX22 a dakikg:Drug;
+  rdfs:label "PERAMPANEL"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX23 a dakikg:Drug;
+  rdfs:label "BRIVARACETAM"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N03AX24 a dakikg:Drug;
+  rdfs:label "CANNABIDIOL"@en;
+  rdfs:subClassOf atc:N03 .
+
+atc:N04 a dakikg:DrugClass;
+  rdfs:label "ANTI-PARKINSON DRUGS"@en .
+
+atc:N04BA02 a dakikg:Drug;
+  rdfs:label "LEVODOPA AND DECARBOXYLASE INHIBITOR"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BA03 a dakikg:Drug;
+  rdfs:label "LEVODOPA, DECARBOXYLASE INHIBITOR AND COMT INHIBITOR"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BC04 a dakikg:Drug;
+  rdfs:label "ROPINIROLE"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BD01 a dakikg:Drug;
+  rdfs:label "SELEGILINE"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BD02 a dakikg:Drug;
+  rdfs:label "RASAGILINE"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BX01 a dakikg:Drug;
+  rdfs:label "TOLCAPONE"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N04BX02 a dakikg:Drug;
+  rdfs:label "ENTACAPONE"@en;
+  rdfs:subClassOf atc:N04 .
+
+atc:N05 a dakikg:DrugClass;
+  rdfs:label "PSYCHOLEPTICS"@en .
+
+atc:N05AA01 a dakikg:Drug;
+  rdfs:label "CHLORPROMAZINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AA02 a dakikg:Drug;
+  rdfs:label "LEVOMEPROMAZINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AD01 a dakikg:Drug;
+  rdfs:label "HALOPERIDOL"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AD06 a dakikg:Drug;
+  rdfs:label "BROMPERIDOL"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AD08 a dakikg:Drug;
+  rdfs:label "DROPERIDOL"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AE03 a dakikg:Drug;
+  rdfs:label "SERTINDOLE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AE05 a dakikg:Drug;
+  rdfs:label "LURASIDONE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AF03 a dakikg:Drug;
+  rdfs:label "CHLORPROTHIXENE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AG02 a dakikg:Drug;
+  rdfs:label "PIMOZIDE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AH02 a dakikg:Drug;
+  rdfs:label "CLOZAPINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AH03 a dakikg:Drug;
+  rdfs:label "OLANZAPINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AH04 a dakikg:Drug;
+  rdfs:label "QUETIAPINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AL01 a dakikg:Drug;
+  rdfs:label "SULPIRIDE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AN01 a dakikg:Drug;
+  rdfs:label "LITHIUM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AX08 a dakikg:Drug;
+  rdfs:label "RISPERIDONE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AX12 a dakikg:Drug;
+  rdfs:label "ARIPIPRAZOLE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AX13 a dakikg:Drug;
+  rdfs:label "PALIPERIDONE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AX15 a dakikg:Drug;
+  rdfs:label "CARIPRAZINE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05AX16 a dakikg:Drug;
+  rdfs:label "BREXPIPRAZOLE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA01 a dakikg:Drug;
+  rdfs:label "DIAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA04 a dakikg:Drug;
+  rdfs:label "OXAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA05 a dakikg:Drug;
+  rdfs:label "POTASSIUM CLORAZEPATE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA08 a dakikg:Drug;
+  rdfs:label "BROMAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA09 a dakikg:Drug;
+  rdfs:label "CLOBAZAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA11 a dakikg:Drug;
+  rdfs:label "PRAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BA12 a dakikg:Drug;
+  rdfs:label "ALPRAZOLAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05BE01 a dakikg:Drug;
+  rdfs:label "BUSPIRONE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD01 a dakikg:Drug;
+  rdfs:label "FLURAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD02 a dakikg:Drug;
+  rdfs:label "NITRAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD03 a dakikg:Drug;
+  rdfs:label "FLUNITRAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD06 a dakikg:Drug;
+  rdfs:label "LORMETAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD07 a dakikg:Drug;
+  rdfs:label "TEMAZEPAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD08 a dakikg:Drug;
+  rdfs:label "MIDAZOLAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD09 a dakikg:Drug;
+  rdfs:label "BROTIZOLAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CD11 a dakikg:Drug;
+  rdfs:label "LOPRAZOLAM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CF01 a dakikg:Drug;
+  rdfs:label "ZOPICLONE"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N05CF02 a dakikg:Drug;
+  rdfs:label "ZOLPIDEM"@en;
+  rdfs:subClassOf atc:N05 .
+
+atc:N06 a dakikg:DrugClass;
+  rdfs:label "PSYCHOANALEPTICS"@en .
+
+atc:N06AA02 a dakikg:Drug;
+  rdfs:label "IMIPRAMINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AA04 a dakikg:Drug;
+  rdfs:label "CLOMIPRAMINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AA09 a dakikg:Drug;
+  rdfs:label "AMITRIPTYLINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AA10 a dakikg:Drug;
+  rdfs:label "NORTRIPTYLINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AA16 a dakikg:Drug;
+  rdfs:label "DOSULEPIN"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AA21 a dakikg:Drug;
+  rdfs:label "MAPROTILINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB03 a dakikg:Drug;
+  rdfs:label "FLUOXETINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB04 a dakikg:Drug;
+  rdfs:label "CITALOPRAM"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB05 a dakikg:Drug;
+  rdfs:label "PAROXETINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB06 a dakikg:Drug;
+  rdfs:label "SERTRALINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB08 a dakikg:Drug;
+  rdfs:label "FLUVOXAMINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AB10 a dakikg:Drug;
+  rdfs:label "ESCITALOPRAM"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AF04 a dakikg:Drug;
+  rdfs:label "TRANYLCYPROMINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AG02 a dakikg:Drug;
+  rdfs:label "MOCLOBEMIDE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX05 a dakikg:Drug;
+  rdfs:label "TRAZODONE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX11 a dakikg:Drug;
+  rdfs:label "MIRTAZAPINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX12 a dakikg:Drug;
+  rdfs:label "BUPROPION"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX16 a dakikg:Drug;
+  rdfs:label "VENLAFAXINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX21 a dakikg:Drug;
+  rdfs:label "DULOXETINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX22 a dakikg:Drug;
+  rdfs:label "AGOMELATINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06AX26 a dakikg:Drug;
+  rdfs:label "VORTIOXETINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06BA04 a dakikg:Drug;
+  rdfs:label "METHYLPHENIDATE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06BA07 a dakikg:Drug;
+  rdfs:label "MODAFINIL"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06BA09 a dakikg:Drug;
+  rdfs:label "ATOMOXETINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06DA02 a dakikg:Drug;
+  rdfs:label "DONEPEZIL"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N06DA04 a dakikg:Drug;
+  rdfs:label "GALANTAMINE"@en;
+  rdfs:subClassOf atc:N06 .
+
+atc:N07 a dakikg:DrugClass;
+  rdfs:label "OTHER NERVOUS SYSTEM DRUGS"@en .
+
+atc:N07BB04 a dakikg:Drug;
+  rdfs:label "NALTREXONE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07BB05 a dakikg:Drug;
+  rdfs:label "NALMEFENE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07BC01 a dakikg:Drug;
+  rdfs:label "BUPRENORPHINE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07BC02 a dakikg:Drug;
+  rdfs:label "METHADONE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07BC51 a dakikg:Drug;
+  rdfs:label "BUPRENORPHINE, COMBINATIONS"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07XX05 a dakikg:Drug;
+  rdfs:label "AMIFAMPRIDINE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07XX07 a dakikg:Drug;
+  rdfs:label "FAMPRIDINE"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:N07XX11 a dakikg:Drug;
+  rdfs:label "PITOLISANT"@en;
+  rdfs:subClassOf atc:N07 .
+
+atc:P01 a dakikg:DrugClass;
+  rdfs:label "ANTIPROTOZOALS"@en .
+
+atc:P01AB01 a dakikg:Drug;
+  rdfs:label "METRONIDAZOLE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01AX06 a dakikg:Drug;
+  rdfs:label "ATOVAQUONE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BA01 a dakikg:Drug;
+  rdfs:label "CHLOROQUINE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BA02 a dakikg:Drug;
+  rdfs:label "HYDROXYCHLOROQUINE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BB51 a dakikg:Drug;
+  rdfs:label "PROGUANIL AND ATOVAQUONE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BC01 a dakikg:Drug;
+  rdfs:label "QUININE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BC02 a dakikg:Drug;
+  rdfs:label "MEFLOQUINE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01BF01 a dakikg:Drug;
+  rdfs:label "ARTEMETHER AND LUMEFANTRINE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P01CX01 a dakikg:Drug;
+  rdfs:label "PENTAMIDINE ISETHIONATE"@en;
+  rdfs:subClassOf atc:P01 .
+
+atc:P02 a dakikg:DrugClass;
+  rdfs:label "ANTHELMINTICS"@en .
+
+atc:P02BA01 a dakikg:Drug;
+  rdfs:label "PRAZIQUANTEL"@en;
+  rdfs:subClassOf atc:P02 .
+
+atc:R03 a dakikg:DrugClass;
+  rdfs:label "DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES"@en .
+
+atc:R03AC02 a dakikg:Drug;
+  rdfs:label "SALBUTAMOL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AC03 a dakikg:Drug;
+  rdfs:label "TERBUTALINE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AC12 a dakikg:Drug;
+  rdfs:label "SALMETEROL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AC13 a dakikg:Drug;
+  rdfs:label "FORMOTEROL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AC18 a dakikg:Drug;
+  rdfs:label "INDACATEROL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AC19 a dakikg:Drug;
+  rdfs:label "OLODATEROL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK06 a dakikg:Drug;
+  rdfs:label "SALMETEROL AND FLUTICASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK07 a dakikg:Drug;
+  rdfs:label "FORMOTEROL AND BUDESONIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK08 a dakikg:Drug;
+  rdfs:label "FORMOTEROL AND BECLOMETASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK10 a dakikg:Drug;
+  rdfs:label "VILANTEROL AND FLUTICASONE FUROATE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK11 a dakikg:Drug;
+  rdfs:label "FORMOTEROL AND FLUTICASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK12 a dakikg:Drug;
+  rdfs:label "SALMETEROL AND BUDESONIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AK14 a dakikg:Drug;
+  rdfs:label "INDACATEROL AND MOMETASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL01 a dakikg:Drug;
+  rdfs:label "FENOTEROL AND IPRATROPIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL02 a dakikg:Drug;
+  rdfs:label "SALBUTAMOL AND IPRATROPIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL03 a dakikg:Drug;
+  rdfs:label "VILANTEROL AND UMECLIDINIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL04 a dakikg:Drug;
+  rdfs:label "INDACATEROL AND GLYCOPYRRONIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL05 a dakikg:Drug;
+  rdfs:label "FORMOTEROL AND ACLIDINIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL06 a dakikg:Drug;
+  rdfs:label "OLODATEROL AND TIOTROPIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL07 a dakikg:Drug;
+  rdfs:label "FORMOTEROL AND GLYCOPYRRONIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL08 a dakikg:Drug;
+  rdfs:label "VILANTEROL, UMECLIDINIUM BROMIDE AND FLUTICASONE FUROATE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL09 a dakikg:Drug;
+  rdfs:label "FORMOTEROL, GLYCOPYRRONIUM BROMIDE AND BECLOMETASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL11 a dakikg:Drug;
+  rdfs:label "FORMOTEROL, GLYCOPYRRONIUM BROMIDE AND BUDESONIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03AL12 a dakikg:Drug;
+  rdfs:label "INDACATEROL, GLYCOPYRRONIUM BROMIDE AND MOMETASONE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03BB07 a dakikg:Drug;
+  rdfs:label "UMECLIDINIUM BROMIDE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03CC02 a dakikg:Drug;
+  rdfs:label "SALBUTAMOL"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03DA04 a dakikg:Drug;
+  rdfs:label "THEOPHYLLINE"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R03DX07 a dakikg:Drug;
+  rdfs:label "ROFLUMILAST"@en;
+  rdfs:subClassOf atc:R03 .
+
+atc:R06 a dakikg:DrugClass;
+  rdfs:label "ANTIHISTAMINES FOR SYSTEMIC USE"@en .
+
+atc:R06AX22 a dakikg:Drug;
+  rdfs:label "EBASTINE"@en;
+  rdfs:subClassOf atc:R06 .
+
+atc:R06AX25 a dakikg:Drug;
+  rdfs:label "MIZOLASTINE"@en;
+  rdfs:subClassOf atc:R06 .
+
+atc:R07 a dakikg:DrugClass;
+  rdfs:label "OTHER RESPIRATORY SYSTEM PRODUCTS"@en .
+
+atc:R07AX02 a dakikg:Drug;
+  rdfs:label "IVACAFTOR"@en;
+  rdfs:subClassOf atc:R07 .
+
+atc:R07AX30 a dakikg:Drug;
+  rdfs:label "IVACAFTOR AND LUMACAFTOR"@en;
+  rdfs:subClassOf atc:R07 .
+
+atc:R07AX31 a dakikg:Drug;
+  rdfs:label "IVACAFTOR AND TEZACAFTOR"@en;
+  rdfs:subClassOf atc:R07 .
+
+atc:R07AX32 a dakikg:Drug;
+  rdfs:label "IVACAFTOR, TEZACAFTOR AND ELEXACAFTOR"@en;
+  rdfs:subClassOf atc:R07 .
+
+atc:S01 a dakikg:DrugClass;
+  rdfs:label "OPHTHALMOLOGICALS"@en .
+
+atc:S01AA12 a dakikg:Drug;
+  rdfs:label "TOBRAMYCIN"@en;
+  rdfs:subClassOf atc:S01 .
+
+atc:S01EC01 a dakikg:Drug;
+  rdfs:label "ACETAZOLAMIDE"@en;
+  rdfs:subClassOf atc:S01 .
+
+atc:V01 a dakikg:DrugClass;
+  rdfs:label "ALLERGENS"@en .
+
+atc:V01AA02 a dakikg:Drug;
+  rdfs:label "GRASS POLLEN"@en;
+  rdfs:subClassOf atc:V01 .
+
+atc:V01AA03 a dakikg:Drug;
+  rdfs:label "HOUSE DUST MITES"@en;
+  rdfs:subClassOf atc:V01 .
+
+atc:V01AA05 a dakikg:Drug;
+  rdfs:label "TREE POLLEN"@en;
+  rdfs:subClassOf atc:V01 .
+
+atc:V01AA07 a dakikg:Drug;
+  rdfs:label "INSECTS"@en;
+  rdfs:subClassOf atc:V01 .
+
+atc:V01AA11 a dakikg:Drug;
+  rdfs:label "ANIMALS"@en;
+  rdfs:subClassOf atc:V01 .
+
+atc:V03 a dakikg:DrugClass;
+  rdfs:label "ALL OTHER THERAPEUTIC PRODUCTS"@en .
+
+atc:V03AB15 a dakikg:Drug;
+  rdfs:label "NALOXONE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AB21 a dakikg:Drug;
+  rdfs:label "POTASSIUM IODIDE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AC01 a dakikg:Drug;
+  rdfs:label "DEFEROXAMINE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AC02 a dakikg:Drug;
+  rdfs:label "DEFERIPRONE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AC03 a dakikg:Drug;
+  rdfs:label "DEFERASIROX"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE01 a dakikg:Drug;
+  rdfs:label "POLYSTYRENE SULFONATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE02 a dakikg:Drug;
+  rdfs:label "SEVELAMER"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE03 a dakikg:Drug;
+  rdfs:label "LANTHANUM CARBONATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE04 a dakikg:Drug;
+  rdfs:label "CALCIUM ACETATE AND MAGNESIUM CARBONATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE05 a dakikg:Drug;
+  rdfs:label "SUCROFERRIC OXYHYDROXIDE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE07 a dakikg:Drug;
+  rdfs:label "CALCIUM ACETATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE09 a dakikg:Drug;
+  rdfs:label "PATIROMER CALCIUM"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AE10 a dakikg:Drug;
+  rdfs:label "SODIUM ZIRCONIUM CYCLOSILICATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AF03 a dakikg:Drug;
+  rdfs:label "CALCIUM FOLINATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AF06 a dakikg:Drug;
+  rdfs:label "SODIUM FOLINATE"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AX03 a dakikg:Drug;
+  rdfs:label "COBICISTAT"@en;
+  rdfs:subClassOf atc:V03 .
+
+atc:V03AX04 a dakikg:Drug;
+  rdfs:label "DIFELIKEFALIN"@en;
+  rdfs:subClassOf atc:V03 .

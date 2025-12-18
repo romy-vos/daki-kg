@@ -1,0 +1,15 @@
+# Which drug-drug interactions may occur when prescribing naproxen, furosemide and enalapril concomitantly?
+# ATC M01AE02, C03CA01, C09AA02
+
+SELECT DISTINCT ?interactionLabel 
+
+WHERE {
+    ?drugA dakikg:hasInteractionWith ?drugB .
+
+    FILTER(?drugA IN (atc:M01AE02, atc:C03CA01, atc:C09AA02) &&
+  		   ?drugB IN (atc:M01AE02, atc:C03CA01, atc:C09AA02))
+
+    << ?drugA dakikg:hasInteractionWith ?drugB >> dakikg:isMemberOfInteraction ?interactionType .
+    
+    ?interactionType rdfs:label ?interactionLabel .
+}

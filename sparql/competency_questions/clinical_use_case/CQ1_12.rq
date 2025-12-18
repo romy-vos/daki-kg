@@ -1,0 +1,15 @@
+# Which drug-drug interactions are known for methotrexate (ATC L04AX03, L01BA01)?
+
+SELECT DISTINCT ?ddiLabel 
+
+WHERE {
+   
+  # select all DDIs involving methotrexate   
+  VALUES ?drug {atc:L04AX03 atc:L01BA01}
+    
+  {<<?drug kdkg:hasInteractionWith ?anotherDrug>> kdkg:isMemberOfInteraction ?ddi .}
+    UNION  
+  {<<?anotherDrug kdkg:hasInteractionWith ?drug >> kdkg:isMemberOfInteraction ?ddi .} 
+
+  ?ddi rdfs:label ?ddiLabel .
+}

@@ -1,0 +1,18 @@
+# Which drugs with AKI as side-effect have hypo- or hyperglacemia (verhoogde/verlaagde glucosespiegel, hypo- hyperglykemie) as a side-effect?
+
+SELECT DISTINCT ?drugLabel
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    # get drugs that have hypo- or hyperglykemia as a side effect
+    VALUES ?allowed {sct:80394007 sct:302866003} .
+    ?drug dakikg:hasAdverseEvent ?ade2 .
+    ?ade2 rdfs:subClassOf* ?allowed .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))        
+}

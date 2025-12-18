@@ -1,0 +1,667 @@
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix dakikg: <http://w3id.org/dakikg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix atc: <http://purl.bioontology.org/ontology/ATC/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+sct:108241001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:111377009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:111406002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:111407006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:112643007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:1153567005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:11659006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:1179462007 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:1187258003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:119247004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:123752003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:127013003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:13335004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:13886001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:14140009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:14669001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:15555002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:15883561000119108 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:166689004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:166693005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:166712009 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:166714005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:166717003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:167180005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:167183007 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:16726004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:167582007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:175901007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:18207002 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:182750009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:190829000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:193003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:194785008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:195791000119101 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197585004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197659005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197660000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197661001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197679002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:197707007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:1981004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:20165001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:203465002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:203467005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:20917003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:21639008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:22702000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:233575001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:233581009 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:233588003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:234024001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:234348004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236381000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236392004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236398000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236403004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236406007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236407003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236411009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236412002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236423003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:236430009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236448000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236458001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236495001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236514003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:236552002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236578006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:236587002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:237897009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:237900002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:238115004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:238117007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:238142003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:238318009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:238319001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:239932005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:2472002 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:248250000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:250725006 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:25821008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:26121002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:264517001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:264536006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:265764009 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:266235007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:267064002 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:270494003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:271260009 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:271350002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:274769005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:275741008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:275765006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:278016005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:28442001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:28637003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:29738008 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:300980002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:302497006 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:309426007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:311366001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:312975006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:31992008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:32322008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:3238004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:32794000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:32916005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:33461007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:33763006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:35145002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:35455006 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:35546006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:359563005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:36171008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:364756009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:371019009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:38481006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:38542009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:38671000119103 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:39539005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:40095003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:42399005 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:424114000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:425369003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:428255004 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:428648006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:431855005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:431856006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:431857002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:433144002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:433146000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:441815006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:441872001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:442326005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:445009001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:446993003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:44730006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:44785005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:4598005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:46177005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:46737006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:47311000119103 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:4800001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:48713002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:49708008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:50581000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:51292008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:52254009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:5277004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:52777008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:52845002 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:5291005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:54879000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:59400006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:59455009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:60357009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:60926001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:61503006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:61688009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:6471000179103 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:64779008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:66954000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:66999008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:68779003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:68815009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:698074000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:702634004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:702635003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:704166007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:70536003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:707151000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:707221002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:709044004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:709978007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:710565001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:71192002 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:713313000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:713886006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:714749008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:716864001 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:718403007 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:719501003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:722760002 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:723188008 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:723190009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:726082003 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:73305009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:74644004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:76114004 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:77182004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:7724006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:78689005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:788613004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:80119007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:80321008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:81308009 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:81450008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:82646005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:83128009 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:83850008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:84727000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:85223007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:86249007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:863929001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:863930006 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:86504008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:87235005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:89627008 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:90241004 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:90493000 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:90688005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:90708001 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept, dakikg:CKDConcept .
+
+sct:91478007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:91635007 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:95568003 a sct:138875005;
+  rdfs:subClassOf dakikg:AKIConcept .
+
+sct:95569006 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+sct:95577005 a sct:138875005;
+  rdfs:subClassOf dakikg:CKDConcept .
+
+dakikg:AKIConcept a rdfs:Class .
+
+dakikg:CKDConcept a rdfs:Class .

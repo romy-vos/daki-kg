@@ -1,0 +1,20 @@
+# Which drugs with AKI as side-effect are contra-indicated in patients with liver insufficiency? 
+# (snomed 59927004 = liver insufficiency)
+
+SELECT DISTINCT ?drugLabel 
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+
+    # get drugs that are contra-indicated for liver failure
+    VALUES ?parent { sct:59927004 }  
+    ?drug dakikg:isContraIndicatedFor ?disease .
+    ?disease rdfs:subClassOf* ?parent .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))   
+        
+}

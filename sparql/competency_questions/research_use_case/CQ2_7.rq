@@ -1,0 +1,19 @@
+# Which drugs with AKI as side-effect have hypotension as a side-effect? (snomed = 45007003)
+
+SELECT DISTINCT ?drugLabel
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+
+    # get drugs that have hypotension as a side effect
+    VALUES ?parent { sct:45007003 }  
+    ?drug dakikg:hasAdverseEvent ?ade2 .
+    ?ade2 rdfs:subClassOf* ?parent .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+
+}

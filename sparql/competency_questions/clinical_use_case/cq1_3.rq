@@ -1,0 +1,19 @@
+# Which drugs for the treatment of heart failure have AKI as a side effect?
+
+SELECT DISTINCT ?drugLabel
+WHERE {
+    
+    # all drugs indicated for heart failure
+    VALUES ?parent { sct:84114007 }  # heart failure
+    
+    ?drug dakikg:isIndicatedFor ?disease .
+    ?disease rdfs:subClassOf* ?parent .
+    
+    # which have AKI as side effect
+    ?drug dakikg:hasAdverseEvent ?ade .
+	?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    # human-readable label
+    ?drug rdfs:label ?druglabel .
+    FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
+}

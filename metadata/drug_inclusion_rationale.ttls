@@ -1,0 +1,604 @@
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix dakikg: <http://w3id.org/dakikg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix atc: <http://purl.bioontology.org/ontology/ATC/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+atc:A02BC01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A02BC02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A02BC03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A02BC04 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A02BC05 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A07EC01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A07EC02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:A10AB01 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AB04 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AB05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AB06 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AC01 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AD01 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AD04 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AD05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AD06 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AE04 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AE05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AE06 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 1', 'Diabetes type 2']"@en .
+
+atc:A10AE54 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10AE56 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BA02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BB03 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BB09 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BB12 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD07 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD08 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD11 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD15 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD20 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BD24 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BF01 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BG03 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BH01 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BH02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BH03 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BH05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BJ02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BJ05 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BJ06 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BK01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Diabetes type 2', 'Heart Failure']"@en .
+
+atc:A10BK02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BK03 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Diabetes type 2', 'Heart Failure']"@en .
+
+atc:A10BK04 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BX02 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A10BX16 a dakikg:Drug;
+  dakikg:includedBecause "['Diabetes type 2']"@en .
+
+atc:A11CC03 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:A11CC04 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:A14AB01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:B03XA01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Chronic Kidney Disease']"@en,
+    "['Chronic Kidney Disease']"@en .
+
+atc:B03XA02 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:B03XA03 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:B03XA05 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:B03XA08 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:B05BC01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:C01AA05 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure']"@en .
+
+atc:C01CA07 a dakikg:Drug;
+  dakikg:includedBecause "['Acute Heart Failure']"@en .
+
+atc:C01CE02 a dakikg:Drug;
+  dakikg:includedBecause "['Acute Heart Failure']"@en .
+
+atc:C01CE03 a dakikg:Drug;
+  dakikg:includedBecause "['Acute Heart Failure']"@en .
+
+atc:C01DA02 a dakikg:Drug;
+  dakikg:includedBecause "['Acute Heart Failure', 'Acute Heart Failure']"@en .
+
+atc:C01DA08 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Acute Heart Failure']"@en .
+
+atc:C01DX22 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure']"@en .
+
+atc:C01EB17 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure']"@en .
+
+atc:C02AB01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C02AC01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C02AC05 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C02CA04 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C02CA06 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C02DC01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C03AA03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C03BA04 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C03BA11 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C03CA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Chronic Kidney Disease', 'Heart Failure', 'Acute Heart Failure', 'Hypertension']"@en .
+
+atc:C03CA02 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Heart Failure', 'Acute Heart Failure']"@en .
+
+atc:C03DA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C03DA04 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure']"@en .
+
+atc:C03DA05 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:C03DB02 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C03EA01 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Heart Failure', 'Hypertension', 'Hypertension']"@en .
+
+atc:C03XA01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:C07AA05 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07AB02 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C07AB03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07AB04 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07AB07 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C07AB08 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07AB12 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C07AG01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07AG02 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C07BB02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07BB07 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C07CB03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA05 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA09 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA12 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08CA13 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08DA01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08DB01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C08GA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09AA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Chronic Kidney Disease', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Chronic Kidney Disease', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Chronic Kidney Disease', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA04 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA05 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA07 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA09 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C09AA15 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA04 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA05 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA06 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BA09 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BB02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BB04 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BB10 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09BX01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09CA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09CA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09CA03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Heart Failure', 'Hypertension']"@en .
+
+atc:C09CA04 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'Chronic Kidney Disease', 'Hypertension']"@en .
+
+atc:C09CA06 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure', 'Hypertension']"@en .
+
+atc:C09CA07 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09CA08 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA04 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA06 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA07 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DA08 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DB01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DB02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DX01 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DX03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:C09DX04 a dakikg:Drug;
+  dakikg:includedBecause "['Heart Failure']"@en .
+
+atc:C09XA02 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:G04CA03 a dakikg:Drug;
+  dakikg:includedBecause "['Hypertension']"@en .
+
+atc:H01AC01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:H05BX01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:H05BX02 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:H05BX04 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:J01CE01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01CR02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01EE01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01GB01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'NEED']"@en .
+
+atc:J01GB03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01GB06 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01MA02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01XA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J01XB01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED', 'NEED']"@en .
+
+atc:J02AA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J04AB02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AB01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AB06 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AB11 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AB14 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AD01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AF06 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AF07 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J05AF13 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:J06BA02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L01AA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L01AA06 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L01DC03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L01XA01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L01XA02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L04AD01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L04AD02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L04AH01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:L04AX03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AB01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AB05 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AC06 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AE01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AE02 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M01AH01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M04AA01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:M05BA03 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:M05BA08 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:N02AA01 a dakikg:Drug;
+  dakikg:includedBecause "['Acute Heart Failure']"@en .
+
+atc:N05AN01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:P01CX01 a dakikg:Drug;
+  dakikg:includedBecause "['NEED']"@en .
+
+atc:V03AC01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE01 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease', 'Chronic Kidney Disease']"@en .
+
+atc:V03AE02 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE03 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE04 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE05 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE07 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE09 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AE10 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .
+
+atc:V03AX04 a dakikg:Drug;
+  dakikg:includedBecause "['Chronic Kidney Disease']"@en .

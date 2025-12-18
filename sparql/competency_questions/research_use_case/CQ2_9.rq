@@ -1,0 +1,21 @@
+# Which drugs with AKI as side-effect have hypovolemia (hypovolemie, dehydratie) as a side-effect?
+# SNOMED 816082000 (hypovolemie)
+# SNOMED 34095006 (dehydratie)
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    # get drugs that have hypovolemie or dehydratatie as a side effect
+    VALUES ?allowed {sct:816082000 sct:34095006} .
+    ?drug dakikg:hasAdverseEvent ?ade2 .
+    ?ade2 rdfs:subClassOf* ?allowed .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))    
+}

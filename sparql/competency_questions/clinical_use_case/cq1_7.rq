@@ -1,0 +1,34 @@
+# Which antibiotic(s) has/have the lowest frequency of AKI as a side-effect?
+# Low frequency is defined as < 1% (that is, <=3, (where 3 = 0.1-1%))
+
+SELECT DISTINCT ?drugLabel 
+
+WHERE {
+
+  # antibiotics (ATC J01)
+  ?drug rdfs:subClassOf atc:J01 .
+
+  # get AKI side effects and their frequencies
+  OPTIONAL {
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    << ?drug dakikg:hasAdverseEvent ?ade >> dakikg:hasFrequency ?freq .
+        
+    ?ade skos:prefLabel ?adelabel .
+    FILTER(LANGMATCHES(LANG(?adelabel), "en"))
+  }
+
+  # get drug labels
+  ?drug rdfs:label ?drugLabel .
+  FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+    
+  # exclude the drugs that have one or more AKI-side effects with a frequency above 3 (0.1-1%)
+  MINUS {
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    << ?drug dakikg:hasAdverseEvent ?ade >> dakikg:hasFrequency ?freq .
+    FILTER(?freq > 3.0)
+    }
+}
+GROUP BY ?drugLabel ?freq
+ORDER BY ?freq

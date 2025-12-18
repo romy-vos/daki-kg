@@ -1,0 +1,18 @@
+# Which drugs for the treatment of hypertension have AKI as a side effect?
+
+SELECT DISTINCT ?drugLabel 
+WHERE {
+    
+    # all drugs indicated for hypertension
+    VALUES ?parent { sct:38341003 }  
+    ?drug dakikg:isIndicatedFor ?disease .
+    ?disease rdfs:subClassOf* ?parent .
+    
+    # which have AKI as side effect
+    ?drug dakikg:hasAdverseEvent ?ade .
+	?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+}

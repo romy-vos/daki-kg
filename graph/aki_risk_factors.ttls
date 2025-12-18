@@ -1,0 +1,338 @@
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix dakikg: <http://w3id.org/dakikg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix atc: <http://purl.bioontology.org/ontology/ATC/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+atc:A02BC01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A02BC02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A02BC03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A02BC04 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A02BC05 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A07EC01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:A07EC02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C03AA03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C03CA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C03DA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09AA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09AA02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09AA03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09CA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09CA03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:C09CA04 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01CE01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01CR02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01EE01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01GB01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01GB03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01GB06 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01MA02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01XA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J01XB01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J02AA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J04AB02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AB01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AB06 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AB11 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AB14 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AD01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AF06 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AF07 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J05AF13 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:J06BA02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L01AA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L01AA06 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L01DC03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L01XA01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L01XA02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L04AD01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L04AD02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L04AH01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:L04AX03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AB01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AB05 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AC06 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AE01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AE02 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M01AH01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M05BA03 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:M05BA08 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:N05AN01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+atc:P01CX01 a dakikg:Drug;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:10087007 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:119247004 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:123799005 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:125666000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:128302006 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:128487001 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:137971000119104 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:166715006 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:186747009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:187192000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:22990009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:23502006 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:240131006 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:248152002 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:266569009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:267874003 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:271737000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:28944009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:31996006 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:328383001 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:36877009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:371057009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:371058004 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:372087000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:38341003 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:387713003 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:398064005 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:409552002 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:413839001 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:414916001 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:415229000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:417746004 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:45007003 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:4851007 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:49120005 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:49601007 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:49808004 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:52072009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:58729003 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:61977001 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:62403005 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:62479008 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:63171007 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:66610008 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:709044004 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:719848005 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:73141000146101 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:73211009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:766956009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:773738009 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:816082000 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:86406008 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+sct:91302008 a sct:138875005;
+  dakikg:isRiskFactorFor dakikg:AKIConcept .
+
+dakikg:AKIConcept a rdfs:Class .

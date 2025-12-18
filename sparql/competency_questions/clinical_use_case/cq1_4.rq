@@ -1,0 +1,18 @@
+# Which drugs interact with tacrolimus compromising kidney safety (Nehpro-DDIs)?
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+    
+  # select all DDIs involving tacrolimus
+  VALUES ?drug {atc:L04AD02}            
+  {<<?drug dakikg:hasInteractionWith ?anotherDrug>> dakikg:isMemberOfInteraction ?ddi .}
+    UNION  
+  {<<?anotherDrug dakikg:hasInteractionWith ?drug >> dakikg:isMemberOfInteraction ?ddi .} 
+  
+  # that have potentially some nephrotoxic effect
+  ?ddi dakikg:hasNephrotoxicEffect 2.0 .
+  
+  ?anotherDrug rdfs:label ?drugLabel
+  FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
+}

@@ -1,0 +1,22 @@
+# What drug-drug interactions may occur between naproxen, furosemide, and enalapril, and do they have any nephrotoxic effect?
+
+SELECT DISTINCT ?drugALabel ?drugBLabel
+?interactionLabel ?nephrotoxicEffect ?requiresAction 
+
+WHERE {
+    ?drugA dakikg:hasInteractionWith ?drugB .
+
+    FILTER(?drugA IN (atc:M01AE02, atc:C03CA01, atc:C09AA02) &&
+  		   ?drugB IN (atc:M01AE02, atc:C03CA01, atc:C09AA02))
+
+    << ?drugA dakikg:hasInteractionWith ?drugB >> dakikg:isMemberOfInteraction ?interactionType .
+    ?interactionType dakikg:requiresAction ?requiresAction .
+    ?interactionType dakikg:hasNephrotoxicEffect ?nephrotoxicEffect .
+    ?interactionType rdfs:label ?interactionLabel .
+    
+    ?drugA rdfs:label ?drugALabel .
+    ?drugB rdfs:label ?drugBLabel .
+    
+    FILTER(LANGMATCHES(LANG(?drugALabel), "en"))
+    FILTER(LANGMATCHES(LANG(?drugBLabel), "en"))
+}

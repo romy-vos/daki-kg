@@ -1,0 +1,19 @@
+# Which side effects may occur when prescribing naproxen, furosemide and enalapril concomitantly?
+# i.e., all side effects that occur in all three drugs.
+# ATC M01AE02, C03CA01, C09AA02
+
+SELECT DISTINCT ?adeLabel 
+
+WHERE {
+    VALUES ?drug { atc:M01AE02 atc:C03CA01 atc:C09AA02 } .
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade skos:prefLabel ?adeLabel .
+    ?drug rdfs:label ?drugLabel .
+    
+    FILTER(LANGMATCHES(LANG(?adeLabel), "en")) .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+
+}
+
+GROUP BY ?ade ?adeLabel
+HAVING (COUNT(DISTINCT ?drug) = 3)

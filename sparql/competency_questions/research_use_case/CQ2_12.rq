@@ -1,0 +1,20 @@
+#I am studying the association between vancomycin and AKI, which AKI risk factors should I consider?  
+#here we are looking for conditon for which vancomycine is prescribed and these condition are also AKI riskfactors
+# indication == vancomycin (A07AA09, J01XA01)
+
+SELECT DISTINCT ?indLabel
+
+WHERE {
+    
+    # get all indications of vancomycin
+    # and AKI risk factors
+    VALUES ?drug {atc:A07AA09 atc:J01XA01} 
+    ?drug dakikg:isIndicatedFor ?indication .
+    ?concept dakikg:isRiskFactorFor+ dakikg:AKIConcept .
+    ?indication rdfs:subClassOf* ?concept .
+    
+    # human-readable label
+    ?indication skos:prefLabel ?indLabel .
+    FILTER(LANGMATCHES(LANG(?indLabel), "en"))
+        
+}

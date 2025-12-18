@@ -1,0 +1,20 @@
+# Which drugs with AKI as side-effect have sepsis as a side-effect? (snomed = 91302008)
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    # get drugs that have sepsis as a side effect
+    VALUES ?parent { sct:91302008 }  
+    ?drug dakikg:hasAdverseEvent ?ade2 .
+    ?ade2 rdfs:subClassOf* ?parent .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+        
+}

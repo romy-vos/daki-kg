@@ -1,0 +1,18 @@
+# Which drugs with AKI as side-effect are contra-indicated in patients with ckd? (snomed 709044004)
+
+SELECT DISTINCT ?drugLabel 
+
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .
+            
+    # get drugs that are contra-indicated for CKD
+    ?drug dakikg:isContraIndicatedFor ?contraindication .
+    ?contraindication rdfs:subClassOf* dakikg:CKDConcept .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))      
+}

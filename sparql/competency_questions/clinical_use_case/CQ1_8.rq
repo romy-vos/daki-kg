@@ -1,0 +1,17 @@
+# Which drugs for the treatment of diabetes are contra-indicated in patients with CKD?
+
+SELECT DISTINCT ?drugLabel 
+WHERE {
+    
+    # all drugs indicated for diabetes
+    VALUES ?parent { sct:73211009 }  # diabetes mellitus
+    ?drug dakikg:isIndicatedFor ?disease .
+    ?disease rdfs:subClassOf* ?parent .
+    
+    # with CKD class
+    ?drug dakikg:isContraIndicatedFor ?contraindication .
+    ?contraindication rdfs:subClassOf* dakikg:CKDConcept .
+    
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+}

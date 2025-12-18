@@ -1,0 +1,20 @@
+# Which drugs with AKI as side-effect are contra-indicated in patients with heart failure? (sct 84114007)
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+    
+    # get all drugs with an AKI ade
+    ?drug dakikg:hasAdverseEvent ?ade .
+    ?ade rdfs:subClassOf* dakikg:AKIConcept .   
+    
+    # get drugs that are contra-indicated for heart failure
+    VALUES ?parent { sct:84114007 }  
+    ?drug dakikg:isContraIndicatedFor ?disease .
+    ?disease rdfs:subClassOf* ?parent .
+    
+    # human-readable label
+    ?drug rdfs:label ?drugLabel .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
+        
+}

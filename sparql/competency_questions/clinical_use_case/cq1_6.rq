@@ -1,0 +1,16 @@
+# Which drugs interact with aciclovir (any DDI)?
+
+SELECT DISTINCT ?drugLabel ?ddi
+
+WHERE {
+   
+  # select all DDIs involving aciclovir   
+  VALUES ?drug {atc:J05AB01}
+    
+  {<<?drug dakikg:hasInteractionWith ?anotherDrug>> dakikg:isMemberOfInteraction ?ddi .}
+    UNION  
+  {<<?anotherDrug dakikg:hasInteractionWith ?drug >> dakikg:isMemberOfInteraction ?ddi .} 
+
+  ?anotherDrug rdfs:label ?drugLabel
+  FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
+}

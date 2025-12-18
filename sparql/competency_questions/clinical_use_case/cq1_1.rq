@@ -1,0 +1,17 @@
+# Which drugs for the treatment of diabetes have AKI as a side effect?
+
+SELECT DISTINCT ?drugLabel
+
+WHERE {
+    
+    # all drugs indicated for diabetes (and its descendants)
+    ?drug dakikg:isIndicatedFor ?ind .
+    ?ind rdfs:subClassOf* sct:73211009 .
+    
+    # which have AKI as side effect
+     ?drug dakikg:hasAdverseEvent ?ade .
+	 ?ade rdfs:subClassOf* dakikg:AKIConcept .
+    
+    ?drug rdfs:label ?druglabel 
+    FILTER (LANGMATCHES(LANG(?drugLabel), "en" ))
+}

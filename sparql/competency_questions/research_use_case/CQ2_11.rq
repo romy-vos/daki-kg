@@ -1,0 +1,18 @@
+# I am studying the association between metamizol and AKI, which AKI risk factors should I consider? (here we are looking for conditon for which metamizol is prescribed and these condition are also AKI riskfactors)
+# metamizol (N02BB02)
+
+SELECT DISTINCT ?indLabel
+
+WHERE {
+    
+    # get all indications of metamizol
+    # and risk factors of AKI
+    atc:N02BB02 dakikg:isIndicatedFor ?indication .
+    ?concept dakikg:isRiskFactorFor+ dakikg:AKIConcept .
+    ?indication rdfs:subClassOf* ?concept .
+    
+    # human-readable label
+    ?indication skos:prefLabel ?indLabel .
+    FILTER(LANGMATCHES(LANG(?indLabel), "en"))
+        
+}
