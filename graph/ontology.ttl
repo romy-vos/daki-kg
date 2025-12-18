@@ -1,0 +1,95 @@
+@prefix : <http://w3id.org/dakikg#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# DAKI-KG
+
+<http://w3id.org/dakikg#> a owl:Ontology ;
+    dcterms:title "DAKI-KG vocabulary" ;
+    dcterms:creator "Romy Vos" ;
+    dcterms:creator "Iacopo Vagliano" ;
+    dcterms:creator "Cornelis Boersma" ;
+    dcterms:creator "Frank van Harmelen" ;
+    dcterms:creator "Annette ten Teije" ;
+    dcterms:creator "Joanna E Klopotowska" ;
+    dcterms:description "An ontology defining custom classes and properties used in DAKI-KG" ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/>;
+    rdfs:seeAlso <https://github.com/romy-vos/daki-kg#readme> ;
+    owl:versionIRI <https://w3id.org/dakikg/1.0> ;
+    owl:versionInfo "Version 1.0 (12-2025)" .
+
+# CLASSES
+
+:Drug a rdfs:Class ;
+    rdfs:label "Drug" ;
+    rdfs:comment "Represents a low-level ATC code (3rd level or lower)." .
+
+:DrugClass a rdfs:Class ;
+    rdfs:label "Drug Class" ;
+    rdfs:comment "Represents a 2nd-level ATC code." .
+
+:NephrotoxicConcept a rdfs:Class ;
+    rdfs:label "Nephrotoxic Concept" ;
+    rdfs:comment "Represents the combination of SNOMED CT terms that are in the AKIConcepts and CKDConcepts." .
+
+:AKIConcept a rdfs:NephrotoxicConcept ;
+    rdfs:label "AKI Concept" ;
+    rdfs:comment "Groups SNOMED CT terms relevant to Acute Kidney Injury (AKI)." ;
+    rdfs:subClassOf :NephrotoxicConcept .
+
+:CKDConcept a rdfs:Class ;
+    rdfs:label "CKDConcept" ;
+    rdfs:comment "Groups SNOMED CT terms relevant to Chronic Kidney Disease (CKD)." ;
+    rdfs:subClassOf :NephrotoxicConcept .
+
+:DDI a rdfs:Class ;
+    rdfs:label "Drug-Drug Interaction (DDI)" ;
+    rdfs:comment "Represents a drug-drug interaction group." .
+
+# OBJECT PROPERTIES
+
+:hasAdverseEvent a owl:ObjectProperty ;
+    rdfs:label "has adverse event" ;
+    rdfs:comment "Describes an adverse event of a drug." .
+
+:isIndicatedFor a owl:ObjectProperty ;
+    rdfs:label "is indicated for" ;
+    rdfs:comment "Describes a therapeutic use (indication) of a drug." .
+
+:isContraIndicatedFor a owl:ObjectProperty ;
+    rdfs:label "is contraindicated for" ;
+    rdfs:comment "Describes a contraindication of a drug." .
+
+:isRiskFactorFor a owl:ObjectProperty ;
+    rdfs:label "is risk factor for" ;
+    rdfs:comment "Describes a risk factor for a disease. Both drugs and clinical findings can be a risk factor." .
+
+:hasInteractionWith a owl:ObjectProperty ;
+                    a owl:SymmetricProperty ;
+    rdfs:label "has interaction with" ;
+    rdfs:comment "Describes an interaction between two drugs." .
+
+# DATATYPE PROPERTIES
+
+:hasNephrotoxicEffect a owl:DatatypeProperty ;
+    rdfs:label "has nephrotoxic effect" ;
+    rdfs:comment "Describes whether the effect of a drug-drug interaction is potentially nephrotoxic. 0=no effect, 1=higher risk, 2=potentially nephrotoxic." ;
+    rdfs:range xsd:integer .
+
+:requiresAction a owl:DatatypeProperty ;
+    rdfs:label "requires action" ;
+    rdfs:comment "Describes whether a drug-drug interaction requires any action." ;
+    rdfs:range xsd:boolean .
+
+# RDF STAR PROPERTIES
+
+:hasFrequency a owl:AnnotationProperty ;
+    rdfs:label "has frequency" ;
+    rdfs:comment """Describes for a drug-adverse event triple the reported frequency.
+Possible categories: 5 (very often), 4 (often), 3 (moderate), 2 (rare), 1 (very rare), -1 (unspecified).""" .
+
+:isMemberOfInteraction a owl:AnnotationProperty ;
+    rdfs:label "is member of interaction" ;
+    rdfs:comment "Describes the link from an interaction triple to an interaction type." .
