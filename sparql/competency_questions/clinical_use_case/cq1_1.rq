@@ -12,6 +12,6 @@ WHERE {
      ?drug dakikg:hasAdverseEvent ?ade .
 	 ?ade rdfs:subClassOf* dakikg:AKIConcept .
     
-    ?drug rdfs:label ?druglabel 
+    ?drug rdfs:label ?drugLabel 
     FILTER (LANGMATCHES(LANG(?drugLabel), "en" ))
 }

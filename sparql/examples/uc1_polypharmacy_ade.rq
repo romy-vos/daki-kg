@@ -1,17 +1,17 @@
 # What accumulated side effects may occur between naproxen, furosemide, and enalapril?
 
-SELECT DISTINCT ?adelabel (GROUP_CONCAT(DISTINCT ?druglabel; SEPARATOR = ",") AS ?drugs)
+SELECT DISTINCT ?adeLabel (GROUP_CONCAT(DISTINCT ?drugLabel; SEPARATOR = ",") AS ?drugs)
        (COUNT(DISTINCT ?drug) AS ?nDrugs)
 
 WHERE {
     VALUES ?drug { atc:M01AE02 atc:C03CA01 atc:C09AA02 } .
     ?drug dakikg:hasAdverseEvent ?ade .
-    ?ade skos:prefLabel ?adelabel .
-    ?drug rdfs:label ?druglabel .
+    ?ade skos:prefLabel ?adeLabel .
+    ?drug rdfs:label ?drugLabel .
     
-    FILTER(LANGMATCHES(LANG(?adelabel), "en")) .
-    FILTER(LANGMATCHES(LANG(?druglabel), "en"))
+    FILTER(LANGMATCHES(LANG(?adeLabel), "en")) .
+    FILTER(LANGMATCHES(LANG(?drugLabel), "en"))
 }
 
-GROUP BY ?ade ?adelabel
+GROUP BY ?ade ?adeLabel
 HAVING (COUNT(DISTINCT ?drug) > 1)

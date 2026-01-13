@@ -14,8 +14,8 @@ WHERE {
     ?ade rdfs:subClassOf* dakikg:AKIConcept .
     << ?drug dakikg:hasAdverseEvent ?ade >> dakikg:hasFrequency ?freq .
         
-    ?ade skos:prefLabel ?adelabel .
-    FILTER(LANGMATCHES(LANG(?adelabel), "en"))
+    ?ade skos:prefLabel ?adeLabel .
+    FILTER(LANGMATCHES(LANG(?adeLabel), "en"))
   }
 
   # get drug labels

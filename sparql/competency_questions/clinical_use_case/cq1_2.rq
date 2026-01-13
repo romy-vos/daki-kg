@@ -8,8 +8,8 @@ WHERE {
    VALUES ?parent { sct:73211009 }  # diabetes mellitus
    ?drug dakikg:isIndicatedFor ?disease .
    ?disease rdfs:subClassOf* ?parent .
-   ?drug rdfs:label ?druglabel .
-   ?drug rdfs:label ?druglabel 
+   ?drug rdfs:label ?drugLabel .
+   ?drug rdfs:label ?drugLabel 
    FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
    
    # exclude all drugs that have at least one AKI ade

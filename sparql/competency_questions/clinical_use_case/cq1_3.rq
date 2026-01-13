@@ -14,6 +14,6 @@ WHERE {
 	?ade rdfs:subClassOf* dakikg:AKIConcept .
     
     # human-readable label
-    ?drug rdfs:label ?druglabel .
+    ?drug rdfs:label ?drugLabel .
     FILTER ( LANGMATCHES( LANG(?drugLabel), "en" ) )
 }
