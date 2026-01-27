@@ -4,41 +4,72 @@
 
 SELECT
   ?topRoot ?topLabel
-  (GROUP_CONCAT(DISTINCT ?descLabel; SEPARATOR=", ") AS ?sharedEvents)
+  (GROUP_CONCAT(DISTINCT STR(?lab_M01); SEPARATOR=", ") AS ?effects_M01AE02)
+  (GROUP_CONCAT(DISTINCT STR(?lab_C03); SEPARATOR=", ") AS ?effects_C03CA01)
+  (GROUP_CONCAT(DISTINCT STR(?lab_C09); SEPARATOR=", ") AS ?effects_C09AA02)
 WHERE {
 
-  # Fix the three drugs
-  BIND(atc:M01AE02 AS ?V1)
-  BIND(atc:C03CA01 AS ?V2)
-  BIND(atc:C09AA02 AS ?V3)
+  # 1) find valid topRoots
 
-  # Adverse events for each drug
-  atc:M01AE02 dakikg:hasAdverseEvent ?c1 .
-  atc:C03CA01 dakikg:hasAdverseEvent ?c2 .
-  atc:C09AA02 dakikg:hasAdverseEvent ?c3 .
-
-  # Shared descendant: intersection of all three
-  ?descendant rdfs:subClassOf* ?c1, ?c2, ?c3 .
-  ?descendant skos:prefLabel ?descLabel .
-
-  # Determine top-root
   {
-    BIND(?c1 AS ?topRoot)
-    FILTER EXISTS { ?c2 rdfs:subClassOf* ?topRoot . ?c3 rdfs:subClassOf* ?topRoot }
-  }
-  UNION
-  {
-    BIND(?c2 AS ?topRoot)
-    FILTER EXISTS { ?c1 rdfs:subClassOf* ?topRoot . ?c3 rdfs:subClassOf* ?topRoot }
-  }
-  UNION
-  {
-    BIND(?c3 AS ?topRoot)
-    FILTER EXISTS { ?c1 rdfs:subClassOf* ?topRoot . ?c2 rdfs:subClassOf* ?topRoot }
+    SELECT DISTINCT ?topRoot ?topLabel
+    WHERE {
+      BIND(atc:M01AE02 AS ?V1)
+      BIND(atc:C03CA01 AS ?V2)
+      BIND(atc:C09AA02 AS ?V3)
+
+      # topRoot must be an event of at least one of the three drugs
+      {
+        ?V1 dakikg:hasAdverseEvent ?topRoot .
+      } UNION {
+        ?V2 dakikg:hasAdverseEvent ?topRoot .
+      } UNION {
+        ?V3 dakikg:hasAdverseEvent ?topRoot .
+      }
+
+      # for EACH drug, there exists SOME event in the branch under topRoot
+      FILTER EXISTS {
+        ?V1 dakikg:hasAdverseEvent ?ae1 .
+        ?ae1 rdfs:subClassOf* ?topRoot .
+      }
+      FILTER EXISTS {
+        ?V2 dakikg:hasAdverseEvent ?ae2 .
+        ?ae2 rdfs:subClassOf* ?topRoot .
+      }
+      FILTER EXISTS {
+        ?V3 dakikg:hasAdverseEvent ?ae3 .
+        ?ae3 rdfs:subClassOf* ?topRoot .
+      }
+
+      # label for the topRoot
+      ?topRoot skos:prefLabel ?topLabel .
+      FILTER(LANGMATCHES(LANG(?topLabel), "en"))
+    }
   }
 
-  ?topRoot skos:prefLabel ?topLabel .
-  FILTER(LANGMATCHES(LANG(?topLabel), "en"))
-  FILTER(LANGMATCHES(LANG(?descLabel), "en"))
+  # per-drug adverse events in this branch
+  # drug 1: M01AE02
+  OPTIONAL {
+    atc:M01AE02 dakikg:hasAdverseEvent ?d1 .
+    ?d1 rdfs:subClassOf* ?topRoot .
+    ?d1 skos:prefLabel ?lab_M01 .
+    FILTER(LANGMATCHES(LANG(?lab_M01), "en"))
+  }
+
+  # drug 2: C03CA01
+  OPTIONAL {
+    atc:C03CA01 dakikg:hasAdverseEvent ?d2 .
+    ?d2 rdfs:subClassOf* ?topRoot .
+    ?d2 skos:prefLabel ?lab_C03 .
+    FILTER(LANGMATCHES(LANG(?lab_C03), "en"))
+  }
+
+  # drug 3: C09AA02
+  OPTIONAL {
+    atc:C09AA02 dakikg:hasAdverseEvent ?d3 .
+    ?d3 rdfs:subClassOf* ?topRoot .
+    ?d3 skos:prefLabel ?lab_C09 .
+    FILTER(LANGMATCHES(LANG(?lab_C09), "en"))
+  }
 }
 GROUP BY ?topRoot ?topLabel
