@@ -7,9 +7,9 @@ WHERE {
   # select all DDIs involving methotrexate   
   VALUES ?drug {atc:L04AX03 atc:L01BA01}
     
-  {<<?drug kdkg:hasInteractionWith ?anotherDrug>> kdkg:isMemberOfInteraction ?ddi .}
+  {<<?drug dakikg:hasInteractionWith ?anotherDrug>> dakikg:isMemberOfInteraction ?ddi .}
     UNION  
-  {<<?anotherDrug kdkg:hasInteractionWith ?drug >> kdkg:isMemberOfInteraction ?ddi .} 
+  {<<?anotherDrug dakikg:hasInteractionWith ?drug >> dakikg:isMemberOfInteraction ?ddi .} 
 
   ?ddi rdfs:label ?ddiLabel .
 }

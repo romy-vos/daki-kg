@@ -6,5 +6,5 @@ WHERE {
     << atc:N05AN01 dakikg:hasAdverseEvent ?ade >> dakikg:hasFrequency ?freq .
     FILTER(?freq > 4.0)
     
-    ?ade rdfs:label ?adeLabel .
+    ?ade skos:prefLabel ?adeLabel .
 } 
