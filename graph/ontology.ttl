@@ -15,7 +15,7 @@
     dcterms:creator "Annette ten Teije" ;
     dcterms:creator "Joanna E Klopotowska" ;
     dcterms:description "An ontology defining custom classes and properties used in DAKI-KG" ;
-    dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/>;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/>;
     rdfs:seeAlso <https://github.com/romy-vos/daki-kg#readme> ;
     owl:versionIRI <https://w3id.org/dakikg/1.0> ;
     owl:versionInfo "Version 1.0 (12-2025)" .
