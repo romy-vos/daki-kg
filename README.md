@@ -2,11 +2,11 @@
 
 ## Table of contents
 1. [Introduction](#introduction)
-2. [Sources](#sources)
-3. [Contents](#contents)
-4. [Usage](#usage)
-6. [Future Work](#future-work)
-7. [Licensing](#licensing)
+2. [Contents](#contents)
+3. [Usage](#usage)
+4. [Competency Questions](#competency-questions)
+5. [Future Work](#future-work)
+6. [Sources and Licensing](#sources-and-licensing)
 
 ## Introduction
 We present a Knowledge Graph (KG) for Drug-Induced Acute Kidney Injury (DAKI). The DAKI-KG contains domain knowledge about drugs known to cause acute kidney injury (AKI), such as their indications, contra-indications, adverse events and drug-drug interactions. The aim of the DAKI-KG is to be applied to a varying number of tasks, such as variable (drug) analysis, confounder analysis and research surrounding QA systems. 
@@ -82,45 +82,69 @@ SNOMED files (not downloadable from this repo, requires your own SNOMED CT licen
 - **snomed_hierarchy.ttls** this is the full SNOMED CT hierarchy. Only concepts and rdfs:subClassOf relations, no labels.
 - **snomed_preferred_terms.ttls**: this contains both English and Dutch labels (only the preferred labels) for the SNOMED CT concepts.
 
-### Competency Questions
-The queries for the competency questions can be found in the *queries/cq/* folder. The filenames refer to the CQ number:
+## Competency Questions
+The queries for the competency questions can be found in the *queries/cq/* folder. The filenames refer to the CQ number. See below the full set of CQs, including the gold standard answers. Note that the gold standard set is not intended to be exhaustive. In bold are the answers that do not exist within the data and/or drugs that we have extracted (e.g., a contraindication is mentioned in a different section than the one we extracted), in other words content that is out of scope in the current version of the DAKI-KG. In _italic_ are the answers that are not retrieved due to other reasons such as a mistake in the automated mappings (please see the paper for additional error analysis). Note that query 1.1 and 2.1, and 1.3 and 2.2, result in the same query although worded differently (and hence have the same answers).
 
-#### 1. Queries related to the clinical context application area and which could be asked by healthcare professionals prescribing medication to CKD patients
+**Clinical context CQs**
 1. Which drugs for the treatment of diabetes have AKI as a side-effect?
-2. item Which drugs for the treatment of diabetes do not have AKI as a side- effect?
+Empagliflozine, _ertugliflozine_, liraglutide, pioglitazon, sitagliptine.
+2. Which drugs for the treatment of diabetes do not have AKI as a side- effect?
+Metformine, insuline_aspart, tolbutamide, _semaglutide_, saxagliptine.
 3. Which drugs for the treatment of heart failure have AKI as a side-effect?
+_Bumetanide_, enoximon, spironolacton, perindopril, candesartan.
 4. Which drugs interact with tacrolimus compromising kidney safety (nephro-DDIs)?
+Ciclosporine, aciclovir, diclofenac, posaconazol, rifampicine.
 5. Which drugs interact with aciclovir compromising kidney safety (nephro-DDIs)?
-6. Which antibiotic(s) to treat sepsis has/have the lowest frequency of AKI as a side-effect?
-7. Which drugs for the treatment of diabetes are contra-indicated in patients with CKD?
-8. Which drug-drug interactions may occur when prescribing naproxen, furosemide and enalapril concomitantly?
-9. Which side-effects may occur when prescribing naproxen, furosemide and enalapril concomitantly?
-10. Which side-effects are very frequent (10\%) for lithium?
-11. Which drug-drug interactions are known for methotrexate?
-12.  which drugs interact with aciclovir (any DDI)?
+Ciclosporine, **tenofovir** (OOS-r),	tacrolimus.
+6. Which drugs interact with aciclovir (any DDI)?
+Ciclosporine, **tenofovir** (OOS-r).}
+7. Which antibiotic(s) to treat sepsis has/have the lowest frequency of AKI as a side-effect?
+Daptomycine, clindamycine, **linezolid** (OOS-d), **meropenem** (OOS-d), **teicoplanine** (OOS-d).}
+8. Which drugs for the treatment of diabetes are contra-indicated in patients with CKD?
+Tolbutamide, **tirzepatide** (OOS-c), **saxagliptine** (OOS-c), metformine, glimepiride, gliclazide, acarbose.
+9. Which drug-drug interactions may occur when prescribing naproxen, furosemide and enalapril concomitantly?
+Diuretics + NSAIDs, RAAS inhibitors + Diuretics, RAAS inhibitors + NSAIDs
+10. Which side-effects may occur when prescribing naproxen, furosemide and enalapril concomitantly?
+_Kidney failure_, _urinary retention_, _liver failure_, diarrhea, thrombocytopenia, vertigo.
+11. Which side-effects are very frequent (>10%) for lithium?
+Polydipsia, polyuria, hand tremor, _weight gain_.
+12. Which drug-drug interactions are known for methotrexate?
+Methotrexate + Cotrimoxazole/Trimethoprim, Methotrexate + Ciclosporin, Methotrexate + Probenecid, Methotrexate + NSAIDs, Methotrexate high dose + Voriconazole.
 
-#### 2. Queries related to research context application area and which could be asked by clinical researchers to identify potential confounders and risk factors for causal modeling.
+**Research context CQs**
 
 1. Which drugs with AKI as side-effect are indicated for the treatment of diabetes?
+Empagliflozine, _ertugliflozine_, liraglutide, pioglitazon, sitagliptine.
 2. Which drugs with AKI as side-effect are indicated for the treatment of heart failure?
+_Bumetanide_, enoximon, spironolacton, perindopril, candesartan}
 3. Which drugs with AKI as side-effect are indicated for the treatment of hypertension?
+Perindopril, _doxazosine_, candesartan, _amlodipine_, spironolacton, hydrochloorthiazide, losartan.
 4. Which drugs with AKI as side-effect are contra-indicated in patients with CKD?
+**Foscarnet** (OOS-c), _tolbutamide_, **irbesartan** (OOS-c), **valganciclovir** (OOS-c), ibuprofen, _diclofenac_ (systemic), lithium, _metamizol_.
 5. Which drugs with AKI as side-effect are contra-indicated in heart failure?
+Diclofenac, celecoxib, naproxen, ibuprofen, etoricoxib.
 6. Which drugs with AKI as side-effect are contra-indicated in liverinsufficiency?
+_Losartan_, **naproxen** (OOS-c), _ibuprofen_, methotrexaat, **pentamidine** (OOS-c), candesartan, valsartan.
 7. Which drugs with AKI as side-effect have hypotension as a side-effect?
-8. Which drugs with AKI as side-effect have hypo- or hyperglacemia (verhoogde/verlaagde glucosespiegel, hypo- hyperglykemie) as a side-effect?
+Irbesartan, losartan, furosemide, hydrochloorthiazide, metamizol.
+8. Which drugs with AKI as side-effect have hypo- or hyperglacemia (verhoogde/verlaagde glucosespiegel, hypo- hyperglykemie) as a side-effect? 
+_Olanzapine_, tenofovirdisoproxil, ciclosporine, tacrolimus, sirolimus.
 9. Which drugs with AKI as side-effect have hypovolemia (hypovolemie, dehydratie) as a side-effect?
+Spironolacton, furosemide, _bumetanide_, canagliflozine, tacrolimus.
 10. Which drugs with AKI as side-effect have sepsis as a side-effect?
+Valganciclovir, ganciclovir, _telmisartan_, _cisplatine_, mitomycine.
 11. I am studying the association between metamizol and AKI, which AKI risk factors should I consider? 
+**Surgery** (OOS-c), **Sepsis** (OOS-c), **Other acute infectious diseases** (OOS-c). 
 12. I am studying the association between vancomycin and AKI, which AKI risk factors should I consider?
+**Sepsis** (OOS-c), Other acute infectious diseases.
 
-### Future Work
+## Future Work
 We aim to continue improving the DAKI-KG, especially the following:
 
 - **Extend the usage of disease groups to a varying set of diseases** We also aim to further investigate the quality of the MedDRA-to-SNOMED CT mappings for this use case. More groups (apart from CKD and AKI) will make it easier to query for broad diseases and retrieve all terms that are relevant, rather than querying for specific SNOMED CT branches.
 - **ELT improvement** We aim to further improve the text-to-SNOMED mappings, especially for complex terms such as extensive contra-indications. For the terms that do not currently exist in SNOMED, we consider methods such as SNOMED CT Expressions, rather than relying on single terms only.
 
-### Licensing
+## Sources and Licensing
 
 The DAKI-KG is made available under the [Creative Commons Attribution-NonCommercial 4.0 International - CC BY-NC](https://www.creativecommons.org/licenses/by-nc/4.0/deed.en) license. 
 **Please note that** that the sources used might have their own licensing attributed:
