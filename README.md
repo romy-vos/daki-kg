@@ -11,7 +11,7 @@
 ## Introduction
 We present a Knowledge Graph (KG) for Drug-Induced Acute Kidney Injury (DAKI). The DAKI-KG contains domain knowledge about drugs known to cause acute kidney injury (AKI), such as their indications, contra-indications, adverse events and drug-drug interactions. The aim of the DAKI-KG is to be applied to a varying number of tasks, such as variable (drug) analysis, confounder analysis and research surrounding QA systems. 
 
-We developed our KG through a semi-automated process with a strong focus on trustworthy domain knowledge sources and expert knowledge. Through the automated processes, it is possible that some facts are not fully complete or accurate, hence we do not recommend the DAKI-KG to be used in the clinical practice. In our paper ([link]()), we describe the full integration and evaluation process. 
+We developed our KG through a semi-automated process with a strong focus on trustworthy domain knowledge sources and expert knowledge. Through the automated processes, it is possible that some facts are not fully complete or accurate, hence we do not recommend the DAKI-KG to be used in the clinical practice. In our paper ([link](https://www.nature.com/articles/s41597-026-07579-4)), we describe the full integration and evaluation process. 
 
 This work was conducted as part of the [LEAPfROG project](https://www.pharmacoinformaticslab.nl/en/leapfrog/) supported by Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO; Dutch Research Council) (KICH1.ST01.20.011) and co-funded in cash by Dutch Kidney Foundation and National Intensive Care Evaluation (NICE) foundation, and in kind by PHARMO Institute for Drug Outcomes Research, Castor, InsightRX, Z-Index, Digital Health Link.
 
